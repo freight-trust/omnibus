@@ -1,0 +1,10 @@
+-XX:+UseLargePages (default false)
+
+# avoids resizing hiccups.
+set -Xms equals to -Xmx 
+
+-XX:+AlwaysPretouch
+
+# meta
+-XX:MetaspaceSize (default 21,807,104)
+-XX:InitialCodeCacheSize (default 2,555,904)

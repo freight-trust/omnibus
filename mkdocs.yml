@@ -1,0 +1,295 @@
+site_name: Freight Trust Network Omnibus
+repo_url: 'https://github.com/freight-trust/omnibus'
+copyright: |
+  Copyright &copy; 2020 <a href="https://freighttrust"  target="_blank" rel="noopener">FreightTrust & Clearing Corporation - All Rights Reserved</a>
+
+extra:
+  latest_version_warning:
+    url_contains: /latest/
+    text: 'You are reading the latest documentation for the Freight Trust Network'
+  support:
+    chat: https://join.slack.com/share/zt-flnfv57l-uzh1Q46nWIeTHM7rMxzE~w
+    email: support@freight.zendesk.com
+    website: https://www.freighttrust.com
+    issues: https://github.com/freight-chain/network#issues
+  google_analytics:
+  - ''
+  - ''
+
+nav:
+  - Home: index.md
+  - Operations:
+    - Incident Recovery Plan: operations/irp.md
+    - Software Defects: operations/defects.md 
+    - Pricing: operations/transaction-pricing.md
+    - Pricing Precedence: operations/pricing-spec-precedence.md
+    - Pricing Benchmark: operations/pricing-benchmark.md
+    - Document Retention Policy: operations/document-retention-policy.md
+    - Safety and Continiuty: operations/safety-and-continiuty.md
+    - Namespace and Inventory Management: operations/namespace.md
+  - Concepts:
+    - Introduction: concepts/util.md
+    - Mechanics and Dogma: concepts/central-dogma.md
+    - Axioms: concepts/axioms.md
+    - Network Design: concepts/network-design.md
+    - Ecosystem: concepts/ecosystem.md
+    - Protocol: concepts/as2protocol.md
+    - Message Design: concepts/message-design.md
+  - Rulebook:
+    - General: rulebook/general.md
+    - Governance: rulebook/governance.md
+    - Governing Laws: rulebook/governing-laws.md
+    - Delivery & Settlement: rulebook/delivery-and-settlement.md
+    - Behavior: rulebook/behavior.md
+    - Index: rulebook/index.md
+    - Legal Parity: rulebook/legal-parity.md
+    - Network Participants: rulebook/network-clearing-participants.md
+    - Obligations: rulebook/obligations.md
+    - Suspension: rulebook/suspension.md
+  - Blockchain:
+    - Blockchain: blockchain/pricing.md
+    - Intro to EDI: blockchain/intro-edi.md
+    - Token Overview: blockchain/token-overview.md
+    - Contracts v1: blockchain/contracts-v1.md
+    - Staking: blockchain/staking.md
+    - Wallets: blockchain/wallets.md
+    - Network: blockchain/network.md
+    - Network Upgrades: blockchain/network-upgrade.md
+    - EVM Reference: blockchain/evm.md
+    - Topology: blockchain/topology.md
+    - Smart Contract Development: blockchain/smart-contract-dev.md
+    - Smart Contract Practices: blockchain/smart-contract-practices.md
+  - Supply Chain:
+    - Overview: supply-chain/README.md
+    - Bill of Lading: supply-chain/bol-rules.md
+    - Warehousing: supply-chain/non-negotiable-warehouse-receipt.md
+    - Non-Negotiable: supply-chain/non-negotiable-bol.md
+    - Customs Brokers: supply-chain/customs-broker-power-of-attorney.md
+    - INCO Terms: supply-chain/incoterms.md
+    - Bill of Lading Rules: supply-chain/bill-of-lading-rules.md
+    - EDI Transactions: supply-chain/856.md
+    - Maritime: supply-chain/containers.md
+  - Supported Interfaces:
+    - Message Structures: service-bus/message-structure.md
+    - X12 Data Transformation: service-bus/x12-parser.md
+    - X12 Data Interchange: service-bus/edi-x12.md
+    - Data Interchange Formats: service-bus/what-is-edi.md
+    - Record Layouts: service-bus/record_layout_codes.md
+    - AcceptShipmentRequest: interfaces/logic/AcceptShipmentRequest.md
+    - AccountApi: interfaces/logic/AccountApi.md
+    - AccountingInvoiceApi: interfaces/logic/AccountingInvoiceApi.md
+    - AccountingInvoiceDateRangeServiceModel: interfaces/logic/AccountingInvoiceDateRangeServiceModel.md
+    - AccountingInvoiceIncludeServiceModel: interfaces/logic/AccountingInvoiceIncludeServiceModel.md
+    - AccountingInvoiceQueryRequest: interfaces/logic/AccountingInvoiceQueryRequest.md
+    - AccountingInvoiceServiceModel: interfaces/logic/AccountingInvoiceServiceModel.md
+    - AddPermissionRequest: interfaces/logic/AddPermissionRequest.md
+    - AddPermissionServiceModel: interfaces/logic/AddPermissionServiceModel.md
+    - AddTrackingLocationRequest: interfaces/logic/AddTrackingLocationRequest.md
+    - AddUserRequest: interfaces/logic/AddUserRequest.md
+    - AddUserServiceModel: interfaces/logic/AddUserServiceModel.md
+    - AdditionalInfoServiceModel: interfaces/logic/AdditionalInfoServiceModel.md
+    - AddressInfo: interfaces/logic/AddressInfo.md
+    - AddressServiceModel: interfaces/logic/AddressServiceModel.md
+    - AnalyticServiceModel: interfaces/logic/AnalyticServiceModel.md
+    - AnchorApi: interfaces/logic/AnchorApi.md
+    - AnchorShipmentTransactionServiceModel: interfaces/logic/AnchorShipmentTransactionServiceModel.md
+    - AssignDriverRequest: interfaces/logic/AssignDriverRequest.md
+    - AuditTrailApi: interfaces/logic/AuditTrailApi.md
+    - AuditTrailQueryRequest: interfaces/logic/AuditTrailQueryRequest.md
+    - AuditTrailServiceModel: interfaces/logic/AuditTrailServiceModel.md
+    - AwardCarrierLoadRequest: interfaces/logic/AwardCarrierLoadRequest.md
+    - BaseAccountingInvoiceApi: interfaces/logic/BaseAccountingInvoiceApi.md
+    - BaseAuditTrailApi: interfaces/logic/BaseAuditTrailApi.md
+    - BaseBrokerApi: interfaces/logic/BaseBrokerApi.md
+    - BaseCarrierApi: interfaces/logic/BaseCarrierApi.md
+    - BaseCommodityTypeApi: interfaces/logic/BaseCommodityTypeApi.md
+    - BaseCompanyApi: interfaces/logic/BaseCompanyApi.md
+    - BaseDocumentApi: interfaces/logic/BaseDocumentApi.md
+    - BaseDriverApi: interfaces/logic/BaseDriverApi.md
+    - BaseDriverSafetyApi: interfaces/logic/BaseDriverSafetyApi.md
+    - BaseEdiConfigApi: interfaces/logic/BaseEdiConfigApi.md
+    - BaseEdiMessageLogApi: interfaces/logic/BaseEdiMessageLogApi.md
+    - BaseEdiTenderApi: interfaces/logic/BaseEdiTenderApi.md
+    - BaseEquipmentLengthApi: interfaces/logic/BaseEquipmentLengthApi.md
+    - BaseEquipmentTypeApi: interfaces/logic/BaseEquipmentTypeApi.md
+    - BaseHandlingUnitApi: interfaces/logic/BaseHandlingUnitApi.md
+    - BaseInvitationApi: interfaces/logic/BaseInvitationApi.md
+    - BaseInvoiceItemApi: interfaces/logic/BaseInvoiceItemApi.md
+    - BaseInvoiceItemCategoryApi: interfaces/logic/BaseInvoiceItemCategoryApi.md
+    - BaseInvoiceParticipantApi: interfaces/logic/BaseInvoiceParticipantApi.md
+    - BaseLadingItemApi: interfaces/logic/BaseLadingItemApi.md
+    - BaseLineItemTypeApi: interfaces/logic/BaseLineItemTypeApi.md
+    - BaseLoadSizeApi: interfaces/logic/BaseLoadSizeApi.md
+    - BaseNmfcClassApi: interfaces/logic/BaseNmfcClassApi.md
+    - BaseNmfcNumberApi: interfaces/logic/BaseNmfcNumberApi.md
+    - BaseOrderItemApi: interfaces/logic/BaseOrderItemApi.md
+    - BaseOrderItemReferenceNumberTypeApi: interfaces/logic/BaseOrderItemReferenceNumberTypeApi.md
+    - BasePackageTypeApi: interfaces/logic/BasePackageTypeApi.md
+    - BasePermissionApi: interfaces/logic/BasePermissionApi.md
+    - BaseRoleApi: interfaces/logic/BaseRoleApi.md
+    - BaseRoleClaimApi: interfaces/logic/BaseRoleClaimApi.md
+    - BaseSaferCarrierApi: interfaces/logic/BaseSaferCarrierApi.md
+    - BaseSamsaraConfigApi: interfaces/logic/BaseSamsaraConfigApi.md
+    - BaseShipmentApi: interfaces/logic/BaseShipmentApi.md
+    - BaseShipmentAppointmentStatusCodeApi: interfaces/logic/BaseShipmentAppointmentStatusCodeApi.md
+    - BaseShipmentConfigApi: interfaces/logic/BaseShipmentConfigApi.md
+    - BaseShipmentDeclineReasonCodeApi: interfaces/logic/BaseShipmentDeclineReasonCodeApi.md
+    - BaseShipmentDriverDispatchApi: interfaces/logic/BaseShipmentDriverDispatchApi.md
+    - BaseShipmentStatusCodeApi: interfaces/logic/BaseShipmentStatusCodeApi.md
+    - BaseShipmentStatusUpdateTypeApi: interfaces/logic/BaseShipmentStatusUpdateTypeApi.md
+    - BaseShipmentTradingPartnerApi: interfaces/logic/BaseShipmentTradingPartnerApi.md
+    - BaseShipperApi: interfaces/logic/BaseShipperApi.md
+    - BaseStopApi: interfaces/logic/BaseStopApi.md
+    - BaseStopUpdateApi: interfaces/logic/BaseStopUpdateApi.md
+    - BaseTenderApi: interfaces/logic/BaseTenderApi.md
+    - BaseTradingChannelApi: interfaces/logic/BaseTradingChannelApi.md
+    - BaseTradingPartnerApi: interfaces/logic/BaseTradingPartnerApi.md
+    - BaseTradingPartnerMessageApi: interfaces/logic/BaseTradingPartnerMessageApi.md
+    - BaseTrailerApi: interfaces/logic/BaseTrailerApi.md
+    - BaseUserApi: interfaces/logic/BaseUserApi.md
+    - BaseVehicleApi: interfaces/logic/BaseVehicleApi.md
+    - BeginRequest: interfaces/logic/BeginRequest.md
+    - BolHandlingRequirements: interfaces/logic/BolHandlingRequirements.md
+    - BrokerApi: interfaces/logic/BrokerApi.md
+    - BrokerCarrierQuoteServiceModel: interfaces/logic/BrokerCarrierQuoteServiceModel.md
+    - BrokerQueryRequest: interfaces/logic/BrokerQueryRequest.md
+    - BrokerServiceModel: interfaces/logic/BrokerServiceModel.md
+    - CarrierAdditionalInfoServiceModel: interfaces/logic/CarrierAdditionalInfoServiceModel.md
+    - CarrierApi: interfaces/logic/CarrierApi.md
+    - CarrierApproveLoadRequest: interfaces/logic/CarrierApproveLoadRequest.md
+    - CarrierCounterOfferLoadRequest: interfaces/logic/CarrierCounterOfferLoadRequest.md
+    - CarrierInformationServiceModel: interfaces/logic/CarrierInformationServiceModel.md
+    - CarrierQueryRequest: interfaces/logic/CarrierQueryRequest.md
+    - CarrierQuoteRequestApi: interfaces/logic/CarrierQuoteRequestApi.md
+    - CarrierQuoteRequestServiceModel: interfaces/logic/CarrierQuoteRequestServiceModel.md
+    - CarrierServiceModel: interfaces/logic/CarrierServiceModel.md
+    - CarrierSignRequest: interfaces/logic/CarrierSignRequest.md
+    - CommodityTypeApi: interfaces/logic/CommodityTypeApi.md
+    - CommodityTypeQueryRequest: interfaces/logic/CommodityTypeQueryRequest.md
+    - CommodityTypeServiceModel: interfaces/logic/CommodityTypeServiceModel.md
+    - CompanyApi: interfaces/logic/CompanyApi.md
+    - CompanyQueryRequest: interfaces/logic/CompanyQueryRequest.md
+    - CompanyServiceModel: interfaces/logic/CompanyServiceModel.md
+    - CompanyViewModel: interfaces/logic/CompanyViewModel.md
+    - CompleteRequest: interfaces/logic/CompleteRequest.md
+    - ConfigApi: interfaces/logic/ConfigApi.md
+    - ConfigurationServiceModel: interfaces/logic/ConfigurationServiceModel.md
+    - ConfirmEmailViewModel: interfaces/logic/ConfirmEmailViewModel.md
+  - Corporate:
+    - EULA: corporate/eula.md.md
+    - Pricing: corporate/transaction-pricing.md
+    - Privacy Policy: corporate/privacy-policy.md
+    - Pricing Precedence: corporate/pricing-spec-precedence.md
+    - IRP Plan: corporate/irp.md
+    - Index: corporate/index.md
+    - Bylaws: corporate/bylaws.md
+    - Document Retention Policy: corporate/document-retention-policy.md
+    - Pricing Benchmark: corporate/pricing-benchmark.md
+    - CCPA: corporate/ccpa.md
+    - GPL Cooperation: corporate/GPL-cooperation-commitment.md
+    - Software Defects: corporate/defects.md
+    - Code of Conduct: corporate/code-of-conduct.md
+    - PKI: corporate/pki.md
+  - EDI Services & API:
+    - X12 Segment:  x12/X12Segment.md
+    - X12 Envelope: x12/X12generic.md
+    - X12 Transaction: x12/X12Transaction.md
+    - Adv. Shipping Manfiest: x12/asn-865.md
+
+docs_dir: docs
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  features:
+    - tabs
+  icon:
+    logo: 'material/earth'
+ # favicon: 'img/logo-notext.svg'
+  palette:
+    primary: 'blue-grey'
+    accent: 'green'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+plugins:
+  - search
+extra_css: ["extra.css"]
+
+
+markdown_extensions:
+  - codehilite
+  - markdown.extensions.toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      permalink: ""
+  - markdown.extensions.admonition:
+  - markdown.extensions.smarty:
+      smart_quotes: false
+  - pymdownx.betterem:
+  - markdown.extensions.attr_list:
+  - markdown.extensions.def_list:
+  - markdown.extensions.tables:
+  - markdown.extensions.abbr:
+  - markdown.extensions.footnotes:
+  - markdown.extensions.md_in_html:
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.highlight:
+      extend_pygments_lang:
+        - name: php-inline
+          lang: php
+          options:
+            startinline: true
+        - name: pycon3
+          lang: pycon
+          options:
+            python3: true
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite:
+      custom_inline:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.inline_mathjax_format
+  - pymdownx.tilde:
+  - pymdownx.caret:
+  - pymdownx.smartsymbols:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.escapeall:
+      hardbreak: True
+      nbsp: True
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.progressbar:
+  - pymdownx.arithmatex:
+  - pymdownx.mark:
+  - pymdownx.striphtml:
+  - pymdownx.keys:
+      separator: "\uff0b"
+  - pymdownx.details:
+  - pymdownx.tabbed:
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/freight-trust
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/orgs/freightcorp/repositories
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/fr8
+    - icon: fontawesome/brands/intercom
+      link: https://intercom.help/freight/en
+
+plugins:
+  - search
+  - git-revision-date-localized
+  - minify:
+      minify_html: true

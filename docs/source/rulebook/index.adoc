@@ -1,0 +1,34 @@
+= Network Rulebook
+:url-project: https://freighttrust.com
+:url-docs: https://docs.freighttrust.com
+:url-org: https://github.com/freight-chain
+:url-group: {url-org}/rulebook
+:url-site-readme: {url-group}/docs-site/blob/master/README.adoc
+:url-freight: https://freighttrust.com
+:idprefix:
+:idseparator: -
+:!example-caption:
+:!table-caption:
+:page-pagination:
+
+:doctype: book
+
+== Network Rulebook
+
+This rulebook governs and provides instructions for the adjudication, regulation and governance over the Freight Trust Network. Additional details are located in the {url-site-readme}[Omnibus Documentation].
+
+=== Resources
+
+* {url-project}[Freight Trust & Clearing]
+* {url-docs}[Omnibus Docs]
+* {url-org}[Network Repositories]
+
+=== Copyright and License
+
+Copyright (C) 2020 FreightTrust & Clearing Corporation
+
+Use of this software is granted under the terms of the https://www.mozilla.org/en-US/MPL/2.0/[Mozilla Public License Version 2.0] (MPL-2.0).
+See link:LICENSE[] to find the full license text.
+
+== Notice
+

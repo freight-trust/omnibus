@@ -1,0 +1,80 @@
+= Ecosystem
+
+link:https://medium.com/freighttrust/evolving-the-freight-trust-ecosystem-fe77d7f28b8c[originally published on our medium blog]
+
+
+Defining Ecosystem Success and Optimizing Mechanisms and Economic Incentives
+In order to achieve ecosystem success, our planning and designing of the platform (i.e. the network proper), we have broadly defined a few key indicators and metrics to ensure and gauge success. Consider the following:
+
+- Lower transaction cost to drive evolution in markets
+- Look for fragmented markets as an opportunity to seek for efficiencies
+- Pass on to the customer the savings introduced by efficiencies
+- Innovate pricing thanks to marketplace mechanism and data
+- build mechanisms that support suppliers of all size
+- Invest in creating a mechanism that brings the best to the top (i.e. rate of failure)
+- Invest in mechanisms for empowerment, augmenting workers potential
+
+
+Creating a so-called platform to access and leverage the potential of an ecosystem is increasingly recognized as the most powerful way to achieve market success: leveraging on ecosystems through platforms simply shown the ability to reach objectives that go beyond what could be possibly achieved by a traditional strategy operating in a controlled, internal, company-owned environment.
+A study from Deloitte and OpenMatters analyzed the evolution of business models in history and characterized them as follows:
+Four business models have been used in history
+
+Asset Builders: build, develop, and lease physical assets
+
+Service Providers: provide services to customers in the form of billable hours
+
+Technology Creators: develop and sell intellectual property
+
+Network Orchestrators: create a network of entities in which the participants interact and build a shared value creation process
+The study also pointed out that the business models of Network Orchestrators achieved notably better results than others and looked like an ultimate “evolution”
+
+* On Market Strategy
++
+[quote,"Networked model of business is an evolution of franchise", "Tim O’Riley"]
+“If a market, or strategy within a market, calls for extreme coordination, the firm model (ed: the industrial firm model) will outperform the network (ed: the platform model). For instance, to create the perfect consumer experience for a smartphone Apple has integrated vertically backwards all the way to making its own chips. Conversely if motivation is of the essence the market model will outperform a network.“
+
+The importance of having a Shaping Strategy
+According to John Hagel of Deloitte Center for the Edge the most advanced and ambitious firms can now leverage on a new, “exciting potential”. This potential relies on the ability to completely transform how a marketplace operates and capture an incredible amount of value by doing so.
+
+* On Strategy
++
+[quote,"Deloitte", "John Hagel"]
+“Today, there are a growing number of opportunities to restructure entire markets and industries by designing new platforms and offering powerful incentives to motivate third parties to participate on them. These are very effective because they mobilize investment by a broad range of other participants rather than requiring the shaper to put all its own money on the table.”
+
+
+As Hagel explains very well in this passage and in the related post, the nature of continuous transformation in technology and markets brings up enormous opportunities for “aware” firms and teams. Those firms can now identify fragmented (or even not yet properly existing) markets and design powerful incentive strategies — embodied by a combination of a digital platform and elements of incentive design — that can help them leverage the potential of complex ecosystems of interaction between third parties. These third parties can gain incredible advantages and value by joining the ecosystem and therefore let platform owners (shapers) benefit from extracting a fraction of it.
+Ecosystems, therefore, enable the participation of large and small organizations (or individuals) in creating value at a scale beyond the possibilities of a single firm. In these ecosystems, participants co-create and interact in a way which would be impossible to manage in a traditional top down (industrial) manner. As a result of this massive collaboration effort and value creation, participants (including so-called customers) are bonded by a shared interest and purpose and they protect and contribute to the ecosystem as a “commons” that enables them.
+
+==== Application > Platform > Ecosystem
+
+Actualizing Ecosystems by incentives design with Platforms and Tokens
+
+With ecosystem actualization, I’m meaning the process that — once the potential for growth and thrivability is recognized in an ecosystem — brings it to fully flowing. Ecosystem actualization normally is a two-step process (to simplify) and has a dichotomous nature: before and after critical mass (sometimes related to network effect) is achieved.
+At this point is a good idea to refresh a few key points:
+ecosystem thrive if supported by well defined and well-executed platform strategies;
+
+- a functioning platform strategy is a set of incentives (crypto-narratives),
+- a set of channels & contexts for interaction (primitives)
+- a set of enabling services to support continuous improvement & learning (enablers)
+
+=== Assessing Platform Success and KPIs
+Our platform strategy is determined by three factors:
+Connection: how easily others can plug into the platform to share and transact
+Gravity: how well the platform attracts participants, both producers and consumers
+Flow: how well the platform fosters the exchange and co-creation of value
+Five factors that may determine whether a platform commodifies labour or allows workers to differentiate and grow. — Pipes to Platforms
+This approach, we believe, in providing agency to truckers rather than the commodification of their labour, will be a key point of differentiation for us.
+
+The Toolbox creates connection by making it easy for others to plug into the platform. This infrastructure enables interactions between participants. For example, Apple provides developers with the OS and underlying code libraries.
+The Magnet creates pull that attracts participants to the platform with a kind of social gravity. For transaction platforms, both producers and consumers must be present to achieve critical mass. Apple needed to attract both developers and users. Similarly, eBay needed both buyers and sellers. Platform builders must pay attention to the design of incentives, reputation systems, and pricing models. They must also leverage social media to harness the network effect for rapid growth.
+
+The Matchmaker fosters the flow of value by making connections between producers and consumers. Data is at the heart of successful matchmaking, and distinguishes platforms from other business models. The Matchmaker captures rich data about the participants and leverages that data to facilitate connections between producers and consumers. For example, Google matches the supply and demand of online content, while marketplaces like eBay match buyers to relevant products.
+
+Toolbox: xEDI Protocol, SaaS Solution, Open API Magnet: Incentives (e.g. rebates), bundling (e.g. SaaS free, only EDI transaction cost), Stakeholder Mining (Referral System via Airdrops), etc.
+Matchmaker: Auction/Reverse Auctions, Combinatorial Auctions, FreightCX (exchange). Polynomial-time-dependent bundle-matching, etc.
+Two additional concepts: liquidity and producer-consumer ratio.
+
+Provider Liquidity: “the percentage of listings that lead to transactions within a certain time period”
+PC Ratio: We define this as the number of customers that one provider can serve. There is no single right ratio that all marketplaces should strive for. In some cases, the provider-to-customer ratio might be as low as 1:1 (one provider can serve only one customer — think real estate), while in others it may be as high as 1:10,000 (one provider can serve 10,000 customers — think stock photos). According to Phil Hu, Airbnb’s figure is 1:70, Uber’s is 1:50, and eBay’s is 1:5.
+
+The more customers one provider can serve, the more you should focus on supply in the beginning. The math behind the reasoning is quite simple: when you are acquiring users by hand, acquiring a provider is more valuable than acquiring a customer since the provider will likely participate in more transactions. Another reason is that idle customers are more dangerous than idle providers. Source: Sharetribe

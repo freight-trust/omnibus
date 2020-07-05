@@ -1,0 +1,867 @@
+[[856]]
+== 856 ASN Receipt
+
+[NOTE]
+.Note
+====
+The 856 mapping listed below is prepared specifically for receiving
+paper rolls or other serialized units at the warehouse.
+====[width="100%",cols="9%,7%,37%,2%,8%,16%,21%",options="header",]
+|===
+|Seg |Ref |Description |M |Value |Mapped To |Notes
+|ST a|
+[verse]
+--
+-01
+-02
+--
+
+a|
+[verse]
+--
+Transaction Set Identifier Code
+Transaction Set Control Number
+--
+
+|M M |"856" |System control |segment
+|BSN a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Transaction Set Purpose Code
+Shipment Identification
+Date
+Time
+--
+
+|M M M M | a|
+[verse]
+--
+
+COMMENTS
+
+--
+
+a|
+[verse]
+--
+
+Required
+
+--
+
+|DTM a|
+[verse]
+--
+-01
+
+-02
+--
+
+a|
+[verse]
+--
+Date/Time Qualifier
+
+Date
+--
+
+|M C C a|
+[verse]
+--
+"002"
+"011"
+
+--
+
+a|
+=== |
+
+[verse]
+--
+DATE
+--
+
+a|
+[verse]
+--
+Requested deliver
+Shipped on
+
+--
+
+|HL a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Hierarchical ID Number
+Hierarchical Parent ID Number
+Hierarchical Level Code
+Hierarchical Child Code
+--
+
+|M O M O a|
+=== |
+
+[verse]
+--
+"S"
+
+--
+
+a|
+==== |
+
+[verse]
+--
+
+--
+
+a|
+[verse]
+--
+Heirarchy control
+
+Shipment level
+
+--
+
+|MEA a|
+[verse]
+--
+-01
+--
+
+a|
+[verse]
+--
+Measurement ....
+--
+
+|O | |Accepted but n |ot mapped
+|TD5 a|
+[verse]
+--
+-01
+-02
+-03
+-04
+-05
+--
+
+a|
+[verse]
+--
+Routing Sequence Code
+Identification Code Qualifier
+Identification Code
+Transportation Method/Type Code
+Routing
+--
+
+|O C C C C a|
+[verse]
+--
+"O"
+"2"
+
+--
+
+a|
+=== |
+
+[verse]
+--
+CARRIER
+
+--
+
+a|
+=== |
+
+[verse]
+--
+SCAC code
+
+--
+
+|TD3 a|
+[verse]
+--
+-01
+-02
+-03
+--
+
+a|
+[verse]
+--
+Equipment Description Code
+Equipment Initial
+Equipment Number
+--
+
+|C O C a|
+[verse]
+--
+"TL"
+
+--
+
+a|
+[verse]
+--
+
+VEHICLE
+VEHICLE
+--
+
+|
+|N1 a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Entity Identifier Code
+Name
+Identification Code Qualifier
+Identification Code
+--
+
+|M C C C a|
+[verse]
+--
+"SF"
+
+"92"
+
+--
+
+a|
+[verse]
+--
+
+NAME
+
+ADDRESS
+--
+
+a|
+[verse]
+--
+Mapped only "SF"
+
+Unique ID req'd
+--
+
+|N3 a|
+[verse]
+--
+-01
+-02
+--
+
+a|
+[verse]
+--
+Address Information
+Address Information
+--
+
+|M O a|
+=== |
+
+a|
+[verse]
+--
+STREET
+STREET
+--
+
+|
+|N4 a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+City Name
+State or Province Code
+Postal Code
+Country Code
+--
+
+|O O O O a|
+==== |
+
+[verse]
+--
+
+--
+
+a|
+[verse]
+--
+CITY
+STATE
+ZIP
+COUNTRY
+--
+
+|
+|HL a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Hierarchical ID Number
+Hierarchical Parent ID Number
+Hierarchical Level Code
+Hierarchical Child Code
+--
+
+|M O M O a|
+=== |
+
+[verse]
+--
+"O"
+
+--
+
+a|
+==== |
+
+[verse]
+--
+
+--
+
+a|
+[verse]
+--
+Hierarchy control
+
+Order level
+
+--
+
+|PRF a|
+[verse]
+--
+-01
+--
+
+a|
+[verse]
+--
+Purchase Order Number
+--
+
+|M | |PO_NUMBER |Required
+|MEA a|
+[verse]
+--
+-01
+--
+
+a|
+[verse]
+--
+Measurement Reference ID Code
+--
+
+|O | |Accepted but n |ot mapped
+|REF a|
+[verse]
+--
+-01
+-02
+--
+
+a|
+[verse]
+--
+Reference Identification Qualif
+Reference Identification
+--
+
+|M O a|
+[verse]
+--
+"MI"
+
+--
+
+a|
+[verse]
+--
+
+REFERENCE
+--
+
+a|
+[verse]
+--
+
+Required
+--
+
+|HL a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Hierarchical ID Number
+Hierarchical Parent ID Number
+Hierarchical Level Code
+Hierarchical Child Code
+--
+
+|M O M O a|
+=== |
+
+[verse]
+--
+"D"
+
+--
+
+a|
+[verse]
+--
+SERIAL
+
+--
+
+a|
+[verse]
+--
+Hierarchy control
+
+Product level
+
+--
+
+|LIN a|
+[verse]
+--
+-01
+-02
+-03
+-04
+-05
+-06
+-07
+-08
+-09
+-10
+-11
+--
+
+a|
+[verse]
+--
+Assigned Identification
+Product/Service ID Qualifier
+Product/Service ID
+Product/Service ID Qualifier
+Product/Service ID
+Product/Service ID Qualifier
+Product/Service ID
+Product/Service ID Qualifier
+Product/Service ID
+Product/Service ID Qualifier
+Product/Service ID
+--
+
+|O M M C C C C C C C C a|
+[verse]
+--
+
+"EP"
+"DUM"
+"LT"
+
+--
+
+a|
+[verse]
+--
+CONTROL
+
+PRODUCT
+
+CONTROL
+
+DESCRIPTION
+
+DESCRIPTION
+
+DESCRIPTION
+--
+
+a|
+[verse]
+--
+Recipient creates
+
+Sender ID Req'd
+
+-04, -05 optional
+
+--
+
+|PID a|
+[verse]
+--
+-01
+--
+
+a|
+[verse]
+--
+Item Description Type
+--
+
+|M | |Accepted but n |ot mapped
+|MEA a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Measurement Reference ID Code
+Measurement Qualifier
+Measurement Value
+Unit of Measure
+--
+
+|O O C C a|
+[verse]
+--
+"CT"
+
+--
+
+a|
+[verse]
+--
+FACT_STORE
+
+QTY_PIECE
+
+--
+
+a|
+[verse]
+--
+Recipient creates
+
+Required
+
+--
+
+|MEA a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Measurement Reference ID Code
+Measurement Qualifier
+Measurement Value
+Unit of Measure
+--
+
+|O O C C a|
+[verse]
+--
+"WT"
+"G"
+
+"LB"
+--
+
+a|
+=== |
+
+[verse]
+--
+QTY_WEIGHT
+FACT_WEIGHT
+--
+
+a|
+=== |
+
+[verse]
+--
+Required
+
+--
+
+|HL a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Hierarchical ID Number
+Hierarchical Parent ID Number
+Hierarchical Level Code
+Hierarchical Child Code
+--
+
+|M O M O a|
+=== |
+
+[verse]
+--
+"I"
+
+--
+
+a|
+==== |
+
+[verse]
+--
+
+--
+
+a|
+[verse]
+--
+Hierarchy control
+
+Item/Unit level
+
+--
+
+|LIN a|
+[verse]
+--
+-01
+-02
+-03
+--
+
+a|
+[verse]
+--
+Assigned Identification
+Product/Service ID Qualifier
+Product/Service ID
+--
+
+|O M M a|
+[verse]
+--
+
+"RO"
+
+--
+
+a|
+=== |
+
+[verse]
+--
+NUMBER
+--
+
+a|
+=== |
+
+[verse]
+--
+Roll no. req'd
+--
+
+|MEA a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Measurement Reference ID Code
+Measurement Qualifier
+Measurement Value
+Unit of Measure
+--
+
+|O O C C a|
+[verse]
+--
+"WT"
+"G"
+
+"LB"
+--
+
+a|
+=== |
+
+[verse]
+--
+QTY_WEIGHT
+
+--
+
+a|
+=== |
+
+[verse]
+--
+Roll wt req'd
+
+--
+
+|MEA a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Measurement Reference ID Code
+Measurement Qualifier
+Measurement Value
+Unit of Measure
+--
+
+|O O C C a|
+[verse]
+--
+"PD"
+"LN"
+
+"LF"
+--
+
+a|
+=== |
+
+[verse]
+--
+QTY_MEASURE
+
+--
+
+a|
+=== |
+
+[verse]
+--
+Roll meas opt'l
+
+--
+
+|CTT a|
+[verse]
+--
+-01
+-02
+-03
+-04
+--
+
+a|
+[verse]
+--
+Number of Line Items
+Hash Total
+Weight
+Unit or Basis for Measurement C
+--
+
+|M O C C | | |
+|SE a|
+[verse]
+--
+-01
+-02
+--
+
+a|
+[verse]
+--
+Number of Included Segments
+Transaction Set Control Number
+--
+
+|M M | |System control |segment
+|===

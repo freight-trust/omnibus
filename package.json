@@ -1,0 +1,31 @@
+{
+  "name": "freight-trust-omnibus",
+  "version": "5.0.0",
+  "description": "Freight Trust & Clearing Omnibus",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "deploy": "rm -rf build && mkdocs build && mkdocs serve",
+    "test:links:check": "find . -name \\*.md ! -path \"./node_modules/*\" -exec ./node_modules/markdown-link-check/markdown-link-check -q -c CI/linkchecker/link_check_conf.json {} \\; > linkchecker.out 2>&1",
+    "test:links:display": "cat linkchecker.out",
+    "test:links:verify": "! grep 'ERROR:' linkchecker.out",
+    "test:links": "npm run test:links:check && npm run test:links:display && npm run test:links:verify",
+    "test": "npm run test:links"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freight-trust/omnibus.git"
+  },
+  "author": "FreightTrust & Clearing Corporation",
+  "license": "CC-NC-ND-2.5",
+  "bugs": {
+    "url": "https://github.com/freight-trust/omnibus/issues"
+  },
+  "homepage": "https://github.com/freight-trust/omnibus#readme",
+  "dependencies": {
+    "markdown-link-check": "3.7.3",
+    "markdown-toc": "^1.2.0"
+  }
+}

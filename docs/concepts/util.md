@@ -1,0 +1,135 @@
+# In brief
+
+We adopt a “cryptoasset” pricing model, evaluate our current token
+model, and propose several changes in order to maximize value accrual as
+the network opens for public (i.e. business) usage. Much of this work is
+based on sources found at the end, and we would like to thank everyone
+who offered their critiques and thoughts on the subject.
+
+Examining the “bifurcated” token model (having 2 tokens: a transactional
+token (network native) and a “system” token (erc-20) is shown to be a
+better model than a traditional singular token model.
+
+# Protocol
+
+  - On Protocols
+    
+    > "Protocols encode the rules of engagement that coordinate the
+    > exchange of a service between a global supplier and global
+    > consumer."
+    > 
+    > —  Chris Burniske Protocols As Minimally Extractive Coordinators 
+
+Protocols provide structure for businesses, but are not businesses
+themselves; they are systems of logic that coordinate exchange between
+suppliers (businesses) and consumers of a service. As coordinators of
+exchange, protocols should be minimally extractive, whereas businesses
+are incentivized to be maximally extractive (that’s profit, and a
+business is valued as a multiple of its profit). The ERC-20 token, $EDI,
+acts as a right to receive the native network asset, xEDI on demand.
+xEDI does not act as a right to receive any other asset, instead, it
+grants the right to transact on the network-based upon market conditions
+and pricing. This does not preclude a trading mechanism from existing:
+we simply enforce a one-way mechanism for EDI to xEDI.
+
+## Nodes and Nodlets
+
+<div class="tip">
+
+1 Validator has 3 Nodlets making the total of 4 "containers"/"servers"
+
+</div>
+
+| Gmemory              | 3        | Paid for every additional word when expanding memory.                      |
+| -------------------- | -------- | -------------------------------------------------------------------------- |
+| Gtxcreate            | 32000    | Paid by all contract-creating transactions after the Homestead transition. |
+| Gtxdatazero          | 4        | Paid for every zero byte of data or code for a transaction.                |
+| Gtxdatanonzero       | 68       | Paid for every non-zero byte of data or code for a transaction.            |
+| Gtransaction         | 21000    | Paid for every transaction.                                                |
+| ext4                 | 4096     | bytes                                                                      |
+| EDI                  | 1        | message                                                                    |
+| Tthroughput          | 135      | tx/s                                                                       |
+| Block Size           | 8294400  |                                                                            |
+|                      | 552960   | bytes per block                                                            |
+|                      | 552.96   | kilo bytes per block                                                       |
+| checkpoint increment | 256      |                                                                            |
+| Rocksdb              | 3860     |                                                                            |
+| epoch                | 22118400 |                                                                            |
+
+### Nodes
+
+Masternodes == Nodes. All nodes are technically the same. The
+classifications below are more specifically `slots`. Nodes are rotated
+into different `slot positions` over an `epoch`. An `epoch` is defined
+in terms of `checkpoint increment` authority: concensus signing node
+validator: failover
+
+### Nodlet
+
+besu-tx: Handling of local transaction pool. besu-sync: Handling of
+blockchain synchronisation through Ethereum P2P network. besu-query:
+Handling of database queries.
+
+## Threshold Utility Level
+
+The `ERC-20` token, `$EDI`, can enable access to the network level
+operator system, commonly referred to as "master nodes". This is both a
+network and a legal operation as operators are part of a limited
+partnership that is compensated from Freight Trust Inc.
+
+Network operation is distributed amongst “Master Nodes”. An amount of
+$EDI is required, x, in order to be able to be eligible for hosting part
+of the main network.
+
+## Categories for Network Operations
+
+``` json
+[
+    {"Category":"Nodes","Item":"Authority,Validator,Failover"},
+    {"Category":"Nodlet","Item":"query,sync,transaction"},
+    {"Category":"Staking","Item":"Operator,Pool"}
+]
+```
+
+## End-market fundamentals
+
+In our use case, we assume that the platform will accrue transaction
+volumes at a consistent dollar rate per user transaction set (e.g. EDI
+transaction to a trading partner). This transaction volume would likely
+be composed of an end-user directly paying for the transaction on a per
+kilobyte basis.
+
+**Value flows being distributed in the native cryptoasset requires an
+exogenous assumption to form a base of value**, and even then, the
+supply-side’s assessment of the value they’re receiving can be
+unpredictable given the native asset’s volatility. We can make the
+assumption that at equilibrium the service should be 1/10th the cost of
+a service provisioned by a company comparable (e.g., storage at 1/10th
+the cost of AWS), as only networks that are more efficient than
+companies will be able to get demand-sides to make the leap. The cost of
+the service can then be pinpointed, the units of the service consumed
+can be projected, and the product of the two is the value stream flowing
+to the supply-side.
+
+That value stream is what the cryptocapital has claim to, and so the
+capital asset component of value can be assessed. The “outside” anchor
+is the cost of comparable services that the cryptonetwork (freight trust
+network) will be competing with, though trouble remains if the native
+cryptoasset is too volatile, as that volatility influences the
+supply-sides’ perception of what they’re getting paid. Freight Trust,
+Inc includes a few “legacy” mechanisms to address this point, such as
+payment to node operators in fiat, thus establishing a fixed cost floor.
+
+Governance mechanisms in general should: 1) Attract a willing
+supply-side that produces the resource (node operators, stakeholders,
+community et al)
+
+2\) Connect that resource to a demand-side that values and is willing to
+pay for the resource (businesses)
+
+3\) It creates an open layer of access to the underlying resource for
+distributors that want to build the last mile to the consumer. (Freight
+Trust Corporate) As of right now, no formal governance mechanism besides
+the informal RFC process exists for EDI. We plan in the following days
+to formally propose a new governance mechanism based upon Dynamic
+Alignment. We have included a graphic to illustrate the idea behind it

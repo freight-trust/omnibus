@@ -1,0 +1,12 @@
+= image:header.png[Freight Trust Node]
+
+* +++<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">++++++</input>+++Freight Documents
+* +++<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked">++++++</input>+++Define-terms.md
+
+[discrete]
+=== RuleBook:
+
+* Bill-of-Lading        - https://github.com/freight-chain/rulebook/blob/master/freight-docs/bill-of-lading/non-negotiable-bol.md[Non-Negotiable]
+* Warehouse        - https://github.com/freight-chain/rulebook/blob/master/freight-docs/warehouse/non-negotiable-warehouse-receipt.md[Non-Negotiable]
+* Master-agreements        - https://github.com/freight-chain/rulebook/blob/master/freight-docs/master-agreements/transporation-master-agreement-pro-shipper.md[Transporation Master Agreement]
+* Customs        https://github.com/freight-chain/rulebook/blob/master/freight-docs/customs/customs-broker-power-of-attorney.md[Power of Attorney, USA] -- (C) 2020 - FreightTrust and Clearing Corporation
