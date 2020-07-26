@@ -1,7 +1,7 @@
 
 [build]
 # Path relative to the root of the repository
-# Leaving this for potential future use 
+# Leaving this for potential future use
 # publish = "docs/site"
 # base = "docs"
 
