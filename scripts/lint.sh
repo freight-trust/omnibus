@@ -25,4 +25,4 @@ done
 # Lint all the content, excluding the previously done`
 eval markdownlint "$GLOBAL_LINT_OPTIONS" "$BASE_DIR/content/**/*.md" || EXIT_CODE=1
 
-exit "${EXIT_CODE}"
+exit "$EXIT_CODE"
