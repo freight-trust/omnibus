@@ -14,16 +14,16 @@ echo ">>> Checking HTML content..."
 # and pipe this to htmlproofer with parallel threads
 # (one htmlproofer per vCPU)
 find "$PATH_TO_SITE" -type f -not -path "/app/site/theme/*" \
-    -name "*.html" -print0 \
-| xargs -0 -r -P "$NUMBER_OF_CPUS" -I '{}' \
-  htmlproofer \
-  --check-html \
-  --check_external_hash \
-  --alt_ignore="/omnibus-logo.png/" \
-  --alt_ignore="/omnibus-logo.svg/" \
-  --http_status_ignore="0,500,501,503" \
-  --url_ignore="/fonts.gstatic.com/,/docs.freighttrust.com/,/github.com\/freight-trust\/omnibus\/edit*/" \
-  '{}' 1>/dev/null
+  -name "*.html" -print0 |
+  xargs -0 -r -P "$NUMBER_OF_CPUS" -I '{}' \
+    htmlproofer \
+    --check-html \
+    --check_external_hash \
+    --alt_ignore="/omnibus-logo.png/" \
+    --alt_ignore="/omnibus-logo.svg/" \
+    --http_status_ignore="0,500,501,503" \
+    --url_ignore="/fonts.gstatic.com/,/docs.freighttrust.com/,/github.com\/freight-trust\/omnibus\/edit*/" \
+    '{}' 1>/dev/null
 ## HTML-proofer options at https://github.com/gjtorikian/html-proofer#configuration
 
 echo "= Documentation checked successfully."
