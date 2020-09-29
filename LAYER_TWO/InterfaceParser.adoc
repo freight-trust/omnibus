@@ -1,0 +1,10003 @@
+= Freight Trust and Clearing EDI.ZONE
+1.0.0
+:toc: left
+:numbered:
+:toclevels: 3
+:source-highlighter: highlightjs
+:keywords: openapi, rest, Freight Trust and Clearing EDI.ZONE 
+:specDir: 
+:snippetDir: 
+:generator-template: v1 2019-12-20
+:info-url: https://openapi-generator.tech
+:app-name: Freight Trust and Clearing EDI.ZONE
+
+[abstract]
+.Abstract
+RESTful API Service for translating data from one format to another.
+
+
+// markup not found, no include::{specDir}intro.adoc[opts=optional]
+
+
+== Access
+
+
+* *APIKey* KeyParamName:     _X-API-KEY_,     KeyInQuery: _false_, KeyInHeader: _true_
+* *HTTP Basic* Authentication _BasicAuth_
+
+
+
+
+
+== Endpoints
+
+
+[.Company]
+=== Company
+
+
+[.apiV1CompanyMeGet]
+==== apiV1CompanyMeGet
+    
+`GET /api/v1/company/me`
+
+Gets your company information.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/company/me/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_8>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully created, returns add result.
+|  <<inline_response_200_8>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/company/me/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/company/me/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/company/me/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/company/me/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1CompanyMePut]
+==== apiV1CompanyMePut
+    
+`PUT /api/v1/company/me`
+
+Edit/Update your company information. Requires manage-company user permissions.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/company/me/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject7 
+|  <<InlineObject7>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/company/me/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/company/me/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/company/me/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/company/me/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.ControlNumbers]
+=== ControlNumbers
+
+
+[.apiV1ControlNumberGet]
+==== apiV1ControlNumberGet
+    
+`GET /api/v1/control-number`
+
+Get a record for your company. Must have appropriate permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/control-number/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_9>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Success, returns the result.
+|  <<inline_response_200_9>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/control-number/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/control-number/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/control-number/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/control-number/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1ControlNumberPut]
+==== apiV1ControlNumberPut
+    
+`PUT /api/v1/control-number`
+
+Edit/Update a record for your company. Must have appropriate permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/control-number/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject8 
+|  <<InlineObject8>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/control-number/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/control-number/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/control-number/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/control-number/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.ConversionCodes]
+=== ConversionCodes
+
+
+[.apiV1CodesIdDelete]
+==== apiV1CodesIdDelete
+    
+`DELETE /api/v1/codes/{id}`
+
+Delete record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/codes/\{id\}/DELETE/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_7>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully deleted, returns deleted result.
+|  <<inline_response_200_7>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/\{id\}/DELETE/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/\{id\}/DELETE/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/codes/{id}/DELETE/DELETE.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/codes/\{id\}/DELETE/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1CodesIdGet]
+==== apiV1CodesIdGet
+    
+`GET /api/v1/codes/{id}`
+
+Get record with given ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/codes/\{id\}/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record  ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_6>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully created, returns add result.
+|  <<inline_response_200_6>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/\{id\}/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/\{id\}/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/codes/{id}/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/codes/\{id\}/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1CodesIdPut]
+==== apiV1CodesIdPut
+    
+`PUT /api/v1/codes/{id}`
+
+Edit/Update a record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/codes/\{id\}/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject6 
+|  <<InlineObject6>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/\{id\}/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/\{id\}/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/codes/{id}/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/codes/\{id\}/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1CodesListPost]
+==== apiV1CodesListPost
+    
+`POST /api/v1/codes/list`
+
+Gets a list of conversion code triggers or code list names.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/codes/list/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject4 
+|  <<InlineObject4>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_5>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns list of conversion code triggers or code list names.
+|  <<inline_response_200_5>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/list/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/list/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/codes/list/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/codes/list/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1CodesPost]
+==== apiV1CodesPost
+    
+`POST /api/v1/codes`
+
+Add a conversion code trigger or code list.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/codes/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject5 
+|  <<InlineObject5>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_201>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 201
+| (CREATED) Successfully created, returns conversion code trigger add result.
+|  <<inline_response_201>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/codes/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/codes/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/codes/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.Convert]
+=== Convert
+
+
+[.apiV1ConvertAcknowledgeFilePost]
+==== apiV1ConvertAcknowledgeFilePost
+    
+`POST /api/v1/convert/acknowledge-file`
+
+Converts data from a file to create an acknowledgement file only.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/convert/acknowledge-file/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+===== Form Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| translate_id 
+| ID of the translation map to use for data conversion. <<string>> 
+| - 
+| null 
+|  
+
+| out_filename 
+| The name of the outbound acknowledgement file. <<string>> 
+| - 
+| null 
+|  
+
+| in_file 
+| The file to create an acknowledgement for. <<file>> 
+| - 
+| null 
+|  
+
+|===         
+
+
+
+
+===== Return Type
+
+
+<<File>>
+
+
+===== Content Type
+
+* application/octet-stream
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return the converted acknowledgement file.
+|  <<File>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/acknowledge-file/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/acknowledge-file/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/convert/acknowledge-file/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/convert/acknowledge-file/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1ConvertAcknowledgeStringPost]
+==== apiV1ConvertAcknowledgeStringPost
+    
+`POST /api/v1/convert/acknowledge-string`
+
+Converts/Translates data from a string to create an acknowledgement only.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/convert/acknowledge-string/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject11 
+|  <<InlineObject11>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_11>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns data conversion results.
+|  <<inline_response_200_11>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/acknowledge-string/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/acknowledge-string/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/convert/acknowledge-string/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/convert/acknowledge-string/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1ConvertFilePost]
+==== apiV1ConvertFilePost
+    
+`POST /api/v1/convert/file`
+
+Converts data from a file.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/convert/file/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+===== Form Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| translate_id 
+| ID of the translation map to use for data conversion. <<string>> 
+| - 
+| null 
+|  
+
+| out_filename 
+| The name of the outbound file. <<string>> 
+| - 
+| null 
+|  
+
+| in_file 
+| The file to convert. <<file>> 
+| - 
+| null 
+|  
+
+|===         
+
+
+
+
+===== Return Type
+
+
+<<File>>
+
+
+===== Content Type
+
+* application/octet-stream
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return the converted data file.
+|  <<File>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/file/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/file/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/convert/file/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/convert/file/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1ConvertJson2grammarFilePost]
+==== apiV1ConvertJson2grammarFilePost
+    
+`POST /api/v1/convert/json2grammar/file`
+
+Converts/Translates a json file into a grammar file. (For use as a starting template only.)
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/convert/json2grammar/file/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+===== Form Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| out_filename 
+| The name of the outbound grammar file. <<string>> 
+| - 
+| null 
+|  
+
+| in_file 
+| The file to create a grammar for. <<file>> 
+| - 
+| null 
+|  
+
+|===         
+
+
+
+
+===== Return Type
+
+
+<<File>>
+
+
+===== Content Type
+
+* application/octet-stream
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return the converted grammar file.
+|  <<File>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/json2grammar/file/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/json2grammar/file/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/convert/json2grammar/file/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/convert/json2grammar/file/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1ConvertJson2grammarPost]
+==== apiV1ConvertJson2grammarPost
+    
+`POST /api/v1/convert/json2grammar`
+
+Converts/Translates a json string into a grammar string. (For use as a starting template only.)
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/convert/json2grammar/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject15 
+|  <<InlineObject15>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_13>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns data conversion results.
+|  <<inline_response_200_13>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/json2grammar/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/json2grammar/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/convert/json2grammar/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/convert/json2grammar/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1ConvertStringPost]
+==== apiV1ConvertStringPost
+    
+`POST /api/v1/convert/string`
+
+Converts/Translates data from a string.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/convert/string/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject9 
+|  <<InlineObject9>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_10>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns data conversion results.
+|  <<inline_response_200_10>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/string/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/string/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/convert/string/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/convert/string/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1ConvertXml2grammarFilePost]
+==== apiV1ConvertXml2grammarFilePost
+    
+`POST /api/v1/convert/xml2grammar/file`
+
+Converts/Translates a xml file into a grammar file. (For use as a starting template only.)
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/convert/xml2grammar/file/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+===== Form Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| all_records 
+| If there are multiple records, Flag to create a grammar for each. [optional] <<integer>> 
+| - 
+| null 
+|  
+
+| out_filename 
+| The name of the outbound grammar file. <<string>> 
+| - 
+| null 
+|  
+
+| in_file 
+| The file to create a grammar for. <<file>> 
+| - 
+| null 
+|  
+
+|===         
+
+
+
+
+===== Return Type
+
+
+<<File>>
+
+
+===== Content Type
+
+* application/octet-stream
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return the converted grammar file.
+|  <<File>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/xml2grammar/file/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/xml2grammar/file/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/convert/xml2grammar/file/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/convert/xml2grammar/file/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1ConvertXml2grammarPost]
+==== apiV1ConvertXml2grammarPost
+    
+`POST /api/v1/convert/xml2grammar`
+
+Converts/Translates a xml string into a grammar string. (For use as a starting template only.)
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/convert/xml2grammar/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject13 
+|  <<InlineObject13>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_12>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns data conversion results.
+|  <<inline_response_200_12>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/xml2grammar/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/convert/xml2grammar/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/convert/xml2grammar/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/convert/xml2grammar/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.Grammar]
+=== Grammar
+
+
+[.apiV1GrammarFileIdGet]
+==== apiV1GrammarFileIdGet
+    
+`GET /api/v1/grammar/file/{id}`
+
+Get a record with given ID and return a file. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/file/\{id\}/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+
+<<File>>
+
+
+===== Content Type
+
+* application/octet-stream
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return the grammar file.
+|  <<File>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/file/\{id\}/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/file/\{id\}/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/file/{id}/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/file/\{id\}/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarFilePost]
+==== apiV1GrammarFilePost
+    
+`POST /api/v1/grammar/file`
+
+Add a grammar from a file.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/file/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+===== Form Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| name 
+| Name of the grammar. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| companyname 
+| Company for the grammar. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| description 
+| Description of the grammar this record belongs to. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| documenttype 
+| Type of document for this grammar. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| version 
+| Version for the grammar. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| formattype 
+| Document format of the grammar. <<string>> 
+| - 
+| null 
+|  
+
+| messagetype 
+| Name of the grammar message type. <<string>> 
+| - 
+| null 
+|  
+
+| file 
+| The file to create a grammar for. <<file>> 
+| - 
+| null 
+|  
+
+| permissions 
+|  <<_api_v1_codes_permissions>> 
+| - 
+| null 
+|  
+
+|===         
+
+
+
+
+===== Return Type
+
+<<inline_response_201>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 201
+| (CREATED) Successfully created, returns operation result.
+|  <<inline_response_201>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/file/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/file/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/file/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/file/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarHtmltemplateFilePost]
+==== apiV1GrammarHtmltemplateFilePost
+    
+`POST /api/v1//grammar/htmltemplate/file`
+
+Add a grammar from a file.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/htmltemplate/file/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+===== Form Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| name 
+| Name of the grammar. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| companyname 
+| Company for the grammar. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| description 
+| Description of the grammar this record belongs to. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| documenttype 
+| Type of document for this grammar. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| version 
+| Version for the grammar. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| formattype 
+| Document format of the grammar. <<string>> 
+| - 
+| null 
+|  
+
+| messagetype 
+| Name of the grammar message type. <<string>> 
+| - 
+| null 
+|  
+
+| file 
+| The file to create a grammar template for. <<file>> 
+| - 
+| null 
+|  
+
+| permissions 
+|  <<_api_v1_codes_permissions>> 
+| - 
+| null 
+|  
+
+|===         
+
+
+
+
+===== Return Type
+
+<<inline_response_201_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 201
+| (CREATED) Successfully created, returns operation result.
+|  <<inline_response_201_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/htmltemplate/file/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/htmltemplate/file/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/htmltemplate/file/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/htmltemplate/file/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarHtmltemplateIdDelete]
+==== apiV1GrammarHtmltemplateIdDelete
+    
+`DELETE /api/v1/grammar/htmltemplate/{id}`
+
+Delete record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/htmltemplate/\{id\}/DELETE/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_17>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully deleted, returns deleted result.
+|  <<inline_response_200_17>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/htmltemplate/\{id\}/DELETE/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/htmltemplate/\{id\}/DELETE/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/htmltemplate/{id}/DELETE/DELETE.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/htmltemplate/\{id\}/DELETE/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarHtmltemplateIdPut]
+==== apiV1GrammarHtmltemplateIdPut
+    
+`PUT /api/v1/grammar/htmltemplate/{id}`
+
+Edit/Update a record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/htmltemplate/\{id\}/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject24 
+|  <<InlineObject24>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/htmltemplate/\{id\}/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/htmltemplate/\{id\}/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/htmltemplate/{id}/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/htmltemplate/\{id\}/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarHtmltemplatePost]
+==== apiV1GrammarHtmltemplatePost
+    
+`POST /api/v1/grammar/htmltemplate`
+
+Add a htmltemplate grammar from a base64 string
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/htmltemplate/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject21 
+|  <<InlineObject21>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_201>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 201
+| (CREATED) Successfully created, returns operation result.
+|  <<inline_response_201>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/htmltemplate/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/htmltemplate/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/htmltemplate/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/htmltemplate/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarIdDelete]
+==== apiV1GrammarIdDelete
+    
+`DELETE /api/v1/grammar/{id}`
+
+Delete record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/\{id\}/DELETE/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_17>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully deleted, returns deleted result.
+|  <<inline_response_200_17>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/\{id\}/DELETE/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/\{id\}/DELETE/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/{id}/DELETE/DELETE.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/\{id\}/DELETE/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarIdGet]
+==== apiV1GrammarIdGet
+    
+`GET /api/v1/grammar/{id}`
+
+Get a record with given ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/\{id\}/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_16>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully created, returns the result.
+|  <<inline_response_200_16>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/\{id\}/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/\{id\}/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/{id}/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/\{id\}/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarIdPut]
+==== apiV1GrammarIdPut
+    
+`PUT /api/v1/grammar/{id}`
+
+Edit/Update a record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/\{id\}/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject23 
+|  <<InlineObject23>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/\{id\}/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/\{id\}/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/{id}/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/\{id\}/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarListPost]
+==== apiV1GrammarListPost
+    
+`POST /api/v1/grammar/list`
+
+Gets a list of grammars.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/list/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject17 
+|  <<InlineObject17>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_14>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns list of grammars.
+|  <<inline_response_200_14>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/list/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/list/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/list/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/list/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarPost]
+==== apiV1GrammarPost
+    
+`POST /api/v1/grammar`
+
+Add a grammar from a base64 string.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject19 
+|  <<InlineObject19>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_201>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 201
+| (CREATED) Successfully created, returns operation result.
+|  <<inline_response_201>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1GrammarSearchPost]
+==== apiV1GrammarSearchPost
+    
+`POST /api/v1/grammar/search`
+
+Search grammars and return a list.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/grammar/search/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject18 
+|  <<InlineObject18>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_15>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns list of grammars.
+|  <<inline_response_200_15>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/search/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/grammar/search/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/grammar/search/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/grammar/search/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.Log]
+=== Log
+
+
+[.apiV1LogIdDelete]
+==== apiV1LogIdDelete
+    
+`DELETE /api/v1/log/{id}`
+
+Delete record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/log/\{id\}/DELETE/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_17>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully deleted, returns deleted result.
+|  <<inline_response_200_17>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/log/\{id\}/DELETE/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/log/\{id\}/DELETE/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/log/{id}/DELETE/DELETE.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/log/\{id\}/DELETE/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1LogIdGet]
+==== apiV1LogIdGet
+    
+`GET /api/v1/log/{id}`
+
+Get a record with given ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/log/\{id\}/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_18>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully created, returns the result.
+|  <<inline_response_200_18>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/log/\{id\}/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/log/\{id\}/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/log/{id}/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/log/\{id\}/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.Partner]
+=== Partner
+
+
+[.apiV1PartnerIdDelete]
+==== apiV1PartnerIdDelete
+    
+`DELETE /api/v1/partner/{id}`
+
+Delete record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/partner/\{id\}/DELETE/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_17>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully deleted, returns deleted result.
+|  <<inline_response_200_17>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/\{id\}/DELETE/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/\{id\}/DELETE/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/partner/{id}/DELETE/DELETE.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/partner/\{id\}/DELETE/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1PartnerIdGet]
+==== apiV1PartnerIdGet
+    
+`GET /api/v1/partner/{id}`
+
+Get a record with given ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/partner/\{id\}/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_20>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully created, returns the result.
+|  <<inline_response_200_20>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/\{id\}/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/\{id\}/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/partner/{id}/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/partner/\{id\}/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1PartnerIdPut]
+==== apiV1PartnerIdPut
+    
+`PUT /api/v1/partner/{id}`
+
+Edit/Update a record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/partner/\{id\}/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject27 
+|  <<InlineObject27>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/\{id\}/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/\{id\}/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/partner/{id}/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/partner/\{id\}/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1PartnerListPost]
+==== apiV1PartnerListPost
+    
+`POST /api/v1/partner/list`
+
+Gets a list of partner records.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/partner/list/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject25 
+|  <<InlineObject25>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_19>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns list of control numbers.
+|  <<inline_response_200_19>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/list/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/list/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/partner/list/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/partner/list/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1PartnerPost]
+==== apiV1PartnerPost
+    
+`POST /api/v1/partner`
+
+Add a partner record.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/partner/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject26 
+|  <<InlineObject26>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_201_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 201
+| (CREATED) Successfully created, returns add result.
+|  <<inline_response_201_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/partner/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/partner/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/partner/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.TranslationMap]
+=== TranslationMap
+
+
+[.apiV1TranslationMapFileIdGet]
+==== apiV1TranslationMapFileIdGet
+    
+`GET /api/v1/translation-map/file/{id}`
+
+Get a record with given ID and return a file. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/translation-map/file/\{id\}/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+
+<<File>>
+
+
+===== Content Type
+
+* application/octet-stream
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return the translation map file.
+|  <<File>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/file/\{id\}/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/file/\{id\}/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/translation-map/file/{id}/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/translation-map/file/\{id\}/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1TranslationMapFilePost]
+==== apiV1TranslationMapFilePost
+    
+`POST /api/v1/translation-map/file`
+
+Add a translation map from a file.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/translation-map/file/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+===== Form Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| companyname 
+| Company for the translation map. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| partnername 
+| Partner for the translation map. <<string>> 
+| - 
+| null 
+|  
+
+| description 
+| Description of the translation map this record belongs to. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| documenttype 
+| Type of document for this translation map. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| version 
+| Version for the translation map. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| from_formattype 
+| Document format of the grammar to translate from. <<string>> 
+| - 
+| null 
+|  
+
+| from_messagetype 
+| Name of the grammar message type to translate from. <<string>> 
+| - 
+| null 
+|  
+
+| frompartner_id 
+| Name of the partner to translate from. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| to_formattype 
+| Document format of the grammar to translate to. <<string>> 
+| - 
+| null 
+|  
+
+| to_messagetype 
+| Name of the grammar message type to translate to. <<string>> 
+| - 
+| null 
+|  
+
+| topartner_id 
+| Name of the partner to translate to. [optional] <<string>> 
+| - 
+| null 
+|  
+
+| tscript 
+| Name of the translation map. <<string>> 
+| - 
+| null 
+|  
+
+| file 
+| The file to create a grammar for. <<file>> 
+| - 
+| null 
+|  
+
+| access_permission 
+| Access permission level for the record. <<string>> 
+| - 
+| null 
+|  
+
+| manage_permission 
+| Manage permission level for the record. <<string>> 
+| - 
+| null 
+|  
+
+|===         
+
+
+
+
+===== Return Type
+
+<<inline_response_201_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 201
+| (CREATED) Successfully created, returns operation result.
+|  <<inline_response_201_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/file/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/file/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/translation-map/file/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/translation-map/file/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1TranslationMapIdDelete]
+==== apiV1TranslationMapIdDelete
+    
+`DELETE /api/v1/translation-map/{id}`
+
+Delete record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/translation-map/\{id\}/DELETE/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_17>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully deleted, returns deleted result.
+|  <<inline_response_200_17>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/\{id\}/DELETE/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/\{id\}/DELETE/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/translation-map/{id}/DELETE/DELETE.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/translation-map/\{id\}/DELETE/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1TranslationMapIdGet]
+==== apiV1TranslationMapIdGet
+    
+`GET /api/v1/translation-map/{id}`
+
+Get a record with given ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/translation-map/\{id\}/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_23>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully created, returns the result.
+|  <<inline_response_200_23>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/\{id\}/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/\{id\}/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/translation-map/{id}/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/translation-map/\{id\}/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1TranslationMapIdPut]
+==== apiV1TranslationMapIdPut
+    
+`PUT /api/v1/translation-map/{id}`
+
+Edit/Update a record by ID. Must have appropriate access permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/translation-map/\{id\}/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject32 
+|  <<InlineObject32>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/\{id\}/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/\{id\}/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/translation-map/{id}/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/translation-map/\{id\}/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1TranslationMapListPost]
+==== apiV1TranslationMapListPost
+    
+`POST /api/v1/translation-map/list`
+
+Gets a list of translation maps.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/translation-map/list/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject28 
+|  <<InlineObject28>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_21>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns list of translation maps.
+|  <<inline_response_200_21>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/list/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/list/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/translation-map/list/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/translation-map/list/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1TranslationMapPost]
+==== apiV1TranslationMapPost
+    
+`POST /api/v1/translation-map`
+
+Add a translation map from a base64 string.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/translation-map/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject30 
+|  <<InlineObject30>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_201_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 201
+| (CREATED) Successfully created, returns operation result.
+|  <<inline_response_201_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/translation-map/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/translation-map/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1TranslationMapSearchPost]
+==== apiV1TranslationMapSearchPost
+    
+`POST /api/v1/translation-map/search`
+
+Search translation maps and return a list.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/translation-map/search/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject29 
+|  <<InlineObject29>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_22>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns list of grammars.
+|  <<inline_response_200_22>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/search/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/translation-map/search/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/translation-map/search/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/translation-map/search/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.User]
+=== User
+
+
+[.apiV1MeApikeyPut]
+==== apiV1MeApikeyPut
+    
+`PUT /api/v1/me/apikey`
+
+Update your user's apikey.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/me/apikey/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202_2>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202_2>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/me/apikey/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/me/apikey/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/me/apikey/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/me/apikey/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1MeGet]
+==== apiV1MeGet
+    
+`GET /api/v1/me`
+
+Gets your user information.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/me/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_25>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully created, returns add result.
+|  <<inline_response_200_25>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/me/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/me/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/me/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/me/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1MePasswordPut]
+==== apiV1MePasswordPut
+    
+`PUT /api/v1/me/password`
+
+Update your user's password.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/me/password/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202_3>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202_3>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/me/password/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/me/password/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/me/password/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/me/password/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1MePut]
+==== apiV1MePut
+    
+`PUT /api/v1/me`
+
+Edit/Update your user record.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/me/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject36 
+|  <<InlineObject36>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/me/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/me/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/me/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/me/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1UserAddPost]
+==== apiV1UserAddPost
+    
+`POST /api/v1/user/add`
+
+Add a user record.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/user/add/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject34 
+|  <<InlineObject34>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_201_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 201
+| (CREATED) Successfully created, returns add result.
+|  <<inline_response_201_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/user/add/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/user/add/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/user/add/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/user/add/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1UserIdDelete]
+==== apiV1UserIdDelete
+    
+`DELETE /api/v1/user/{id}`
+
+Delete record by ID. Must have appropriate permission.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/user/\{id\}/DELETE/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_17>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully deleted, returns deleted result.
+|  <<inline_response_200_17>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/user/\{id\}/DELETE/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/user/\{id\}/DELETE/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/user/{id}/DELETE/DELETE.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/user/\{id\}/DELETE/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1UserIdPut]
+==== apiV1UserIdPut
+    
+`PUT /api/v1/user/{id}`
+
+Edit/Update a record by ID. Must have manage-user permissions.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/user/\{id\}/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| id 
+| Record ID  
+| X 
+| null 
+|  
+
+|===         
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject35 
+|  <<InlineObject35>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_202_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 202
+| (ACCEPTED) Successfully updated, returns updated result.
+|  <<inline_response_202_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/user/\{id\}/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/user/\{id\}/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/user/{id}/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/user/\{id\}/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1UserListPost]
+==== apiV1UserListPost
+    
+`POST /api/v1/user/list`
+
+Gets a list of users. Requires manage-user user permissions.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/user/list/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject33 
+|  <<InlineObject33>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_24>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, returns list of translation maps.
+|  <<inline_response_200_24>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/user/list/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/user/list/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/user/list/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/user/list/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.Utilities]
+=== Utilities
+
+
+[.apiV1Base642filePost]
+==== apiV1Base642filePost
+    
+`POST /api/v1/base642file`
+
+Converts a Base64 string to a file.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/base642file/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject2 
+|  <<InlineObject2>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+
+<<File>>
+
+
+===== Content Type
+
+* application/octet-stream
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return the file.
+|  <<File>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/base642file/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/base642file/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/base642file/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/base642file/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1Base642stringPost]
+==== apiV1Base642stringPost
+    
+`POST /api/v1/base642string`
+
+Converts a Base64 string to a text string.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/base642string/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject3 
+|  <<InlineObject3>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_4>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return text string.
+|  <<inline_response_200_4>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/base642string/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/base642string/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/base642string/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/base642string/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1File2base64Post]
+==== apiV1File2base64Post
+    
+`POST /api/v1/file2base64`
+
+Converts an uploaded file to a Base64 string.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/file2base64/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+===== Form Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| file 
+| The file to convert, allowed file types: txt, x12, edifact, edi, csv, json, html <<file>> 
+| - 
+| null 
+|  
+
+|===         
+
+
+
+
+===== Return Type
+
+<<inline_response_200_2>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return Base64 string representation of the file.
+|  <<inline_response_200_2>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/file2base64/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/file2base64/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/file2base64/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/file2base64/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1Get]
+==== apiV1Get
+    
+`GET /api/v1/`
+
+EDI.ZONE API Information
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return API information object.
+|  <<inline_response_200>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1String2base64Post]
+==== apiV1String2base64Post
+    
+`POST /api/v1/string2base64`
+
+Converts a text string to a base64 string.
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/string2base64/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===         
+|Name| Description| Required| Default| Pattern
+
+| InlineObject1 
+|  <<InlineObject1>> 
+| - 
+|  
+|  
+
+|===         
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_3>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return the base64 encoded string.
+|  <<inline_response_200_3>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/string2base64/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/string2base64/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/string2base64/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/string2base64/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.apiV1UserGet]
+==== apiV1UserGet
+    
+`GET /api/v1/user`
+
+Authorized User Information
+
+===== Description 
+
+
+
+
+// markup not found, no include::{specDir}api/v1/user/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+
+
+===== Return Type
+
+<<inline_response_200_1>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===         
+| Code | Message | Datatype 
+
+
+| 200
+| (OK) Successfully processed, return Authorized User Object.
+|  <<inline_response_200_1>>
+
+|===         
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}api/v1/user/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}api/v1/user/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :api/v1/user/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}api/v1/user/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[#models]
+== Models
+
+
+[#ApiV1CodesCcodes]
+=== _ApiV1CodesCcodes_ 
+
+
+
+[.fields-ApiV1CodesCcodes]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| leftcode 
+|  
+| String  
+| Left the conversion code or origin text.
+|  
+
+| rightcode 
+|  
+| String  
+| Right the conversion code or converted text.
+|  
+
+|===
+
+
+[#ApiV1CodesIdPermissions]
+=== _ApiV1CodesIdPermissions_ 
+
+Permissions to assign to the record. [optional]
+
+[.fields-ApiV1CodesIdPermissions]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| access 
+|  
+| String  
+| Access permission level for the record. [optional]
+|  
+
+| manage 
+|  
+| String  
+| Manage permission level for the record. [optional]
+|  
+
+|===
+
+
+[#ApiV1CodesPermissions]
+=== _ApiV1CodesPermissions_ 
+
+Permissions to assign to the record.
+
+[.fields-ApiV1CodesPermissions]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| access 
+|  
+| String  
+| Access permission level for the record.
+|  
+
+| manage 
+|  
+| String  
+| Manage permission level for the record.
+|  
+
+|===
+
+
+[#ApiV1ControlNumberCsvControlNumber]
+=== _ApiV1ControlNumberCsvControlNumber_ 
+
+Values of control numbers for csv records. [optional]
+
+[.fields-ApiV1ControlNumberCsvControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number. [optional]
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#ApiV1ControlNumberEdifactControlNumber]
+=== _ApiV1ControlNumberEdifactControlNumber_ 
+
+Values of control numbers for edifact records. [optional]
+
+[.fields-ApiV1ControlNumberEdifactControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number. [optional]
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#ApiV1ControlNumberFixedControlNumber]
+=== _ApiV1ControlNumberFixedControlNumber_ 
+
+Values of control numbers for fixed position records. [optional]
+
+[.fields-ApiV1ControlNumberFixedControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number. [optional]
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#ApiV1ControlNumberIdocControlNumber]
+=== _ApiV1ControlNumberIdocControlNumber_ 
+
+Values of control numbers for idoc position records. [optional]
+
+[.fields-ApiV1ControlNumberIdocControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number. [optional]
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#ApiV1ControlNumberJsonControlNumber]
+=== _ApiV1ControlNumberJsonControlNumber_ 
+
+Values of control numbers for json position records. [optional]
+
+[.fields-ApiV1ControlNumberJsonControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number. [optional]
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#ApiV1ControlNumberTradacomsControlNumber]
+=== _ApiV1ControlNumberTradacomsControlNumber_ 
+
+Values of control numbers for tradacoms position records. [optional]
+
+[.fields-ApiV1ControlNumberTradacomsControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number. [optional]
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#ApiV1ControlNumberX12ControlNumber]
+=== _ApiV1ControlNumberX12ControlNumber_ 
+
+Values of control numbers for x12 position records. [optional]
+
+[.fields-ApiV1ControlNumberX12ControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number. [optional]
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#ApiV1ControlNumberXmlControlNumber]
+=== _ApiV1ControlNumberXmlControlNumber_ 
+
+Values of control numbers for xml position records. [optional]
+
+[.fields-ApiV1ControlNumberXmlControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number. [optional]
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#ErrorObject]
+=== _ErrorObject_ 
+
+All responses that do not return a 2XX HTTP Status Code return this Error Object.
+
+[.fields-ErrorObject]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| success 
+|  
+| Boolean  
+| 
+|  
+
+| error 
+|  
+| ErrorObject_error  
+| 
+|  
+
+|===
+
+
+[#ErrorObjectError]
+=== _ErrorObjectError_ 
+
+
+
+[.fields-ErrorObjectError]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| type 
+|  
+| String  
+| HTTP Status Code and Description
+|  
+
+| message 
+|  
+| String  
+| Additional message or description of the error
+|  
+
+|===
+
+
+[#InlineObject]
+=== _InlineObject_ 
+
+
+
+[.fields-InlineObject]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| file 
+|  
+| File  
+| The file to convert, allowed file types: txt, x12, edifact, edi, csv, json, html
+| binary 
+
+|===
+
+
+[#InlineObject1]
+=== _InlineObject1_ 
+
+
+
+[.fields-InlineObject1]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| content 
+|  
+| String  
+| The text string.
+|  
+
+|===
+
+
+[#InlineObject10]
+=== _InlineObject10_ 
+
+
+
+[.fields-InlineObject10]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| translate_id 
+|  
+| String  
+| ID of the translation map to use for data conversion.
+|  
+
+| out_filename 
+|  
+| String  
+| The name of the outbound file.
+|  
+
+| in_file 
+|  
+| File  
+| The file to convert.
+| binary 
+
+|===
+
+
+[#InlineObject11]
+=== _InlineObject11_ 
+
+
+
+[.fields-InlineObject11]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| translate_id 
+|  
+| String  
+| ID of the translation map to use for data conversion.
+|  
+
+| base64 
+|  
+| Integer  
+| Flag to mark string as base64 or not. [optional]
+| int32 
+
+| in_data 
+|  
+| String  
+| Inbound data to create an acknowledgement for.
+|  
+
+|===
+
+
+[#InlineObject12]
+=== _InlineObject12_ 
+
+
+
+[.fields-InlineObject12]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| translate_id 
+|  
+| String  
+| ID of the translation map to use for data conversion.
+|  
+
+| out_filename 
+|  
+| String  
+| The name of the outbound acknowledgement file.
+|  
+
+| in_file 
+|  
+| File  
+| The file to create an acknowledgement for.
+| binary 
+
+|===
+
+
+[#InlineObject13]
+=== _InlineObject13_ 
+
+
+
+[.fields-InlineObject13]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| all_records 
+|  
+| Integer  
+| If there are multiple records, Flag to create a grammar for each. [optional]
+| int32 
+
+| base64 
+|  
+| Integer  
+| Flag to mark string as base64 or not. [optional]
+| int32 
+
+| in_data 
+|  
+| String  
+| Inbound data to create a grammar for.
+|  
+
+|===
+
+
+[#InlineObject14]
+=== _InlineObject14_ 
+
+
+
+[.fields-InlineObject14]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| all_records 
+|  
+| Integer  
+| If there are multiple records, Flag to create a grammar for each. [optional]
+| int32 
+
+| out_filename 
+|  
+| String  
+| The name of the outbound grammar file.
+|  
+
+| in_file 
+|  
+| File  
+| The file to create a grammar for.
+| binary 
+
+|===
+
+
+[#InlineObject15]
+=== _InlineObject15_ 
+
+
+
+[.fields-InlineObject15]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| base64 
+|  
+| Integer  
+| Flag to mark string as base64 or not. [optional]
+| int32 
+
+| in_data 
+|  
+| String  
+| Inbound data to create a grammar for.
+|  
+
+|===
+
+
+[#InlineObject16]
+=== _InlineObject16_ 
+
+
+
+[.fields-InlineObject16]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| out_filename 
+|  
+| String  
+| The name of the outbound grammar file.
+|  
+
+| in_file 
+|  
+| File  
+| The file to create a grammar for.
+| binary 
+
+|===
+
+
+[#InlineObject17]
+=== _InlineObject17_ 
+
+
+
+[.fields-InlineObject17]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| from 
+|  
+| Integer  
+| Record number to start the list from. [optional]
+| int32 
+
+| size 
+|  
+| Integer  
+| Number of records to return. [optional]
+| int32 
+
+| sort_by 
+|  
+| String  
+| The property to sor the list by. [optional]
+|  
+
+| sort_order 
+|  
+| String  
+| the order in which to sort the list. [optional]
+|  
+
+| search_after 
+|  
+| List  
+| Array of key/values to get the next set of result after. [optional]
+|  
+
+| access_permission 
+|  
+| String  
+| Access permission authorization level of the records to return. [optional]
+|  
+
+| manage_permission 
+|  
+| String  
+| Manage permission authorization level of the records to return. [optional]
+|  
+
+|===
+
+
+[#InlineObject18]
+=== _InlineObject18_ 
+
+
+
+[.fields-InlineObject18]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| from 
+|  
+| Integer  
+| Record number to start the list from. [optional]
+| int32 
+
+| size 
+|  
+| Integer  
+| Number of records to return. [optional]
+| int32 
+
+| sort_by 
+|  
+| String  
+| The property to sor the list by. [optional]
+|  
+
+| sort_order 
+|  
+| String  
+| the order in which to sort the list. [optional]
+|  
+
+| name 
+|  
+| String  
+| Name of the grammar. [optional] - wildcard character &#39;*&#39;
+|  
+
+| formattype 
+|  
+| String  
+| Format type of grammar. [optional] - wildcard character &#39;*&#39;
+|  
+
+| messagetype 
+|  
+| String  
+| Message type of grammar. [optional] - wildcard character &#39;*&#39;
+|  
+
+| documenttype 
+|  
+| String  
+| Document type of grammar. [optional] - wildcard character &#39;*&#39;
+|  
+
+| companyname 
+|  
+| String  
+| Company name or trading partner name for the grammar. [optional] - wildcard character &#39;*&#39;
+|  
+
+| version 
+|  
+| String  
+| Version of the grammar. [optional] - wildcard character &#39;*&#39;
+|  
+
+| access_permission 
+|  
+| String  
+| Access permission authorization level of the records to return.
+|  
+
+| manage_permission 
+|  
+| String  
+| Manage permission authorization level of the records to return.
+|  
+
+|===
+
+
+[#InlineObject19]
+=== _InlineObject19_ 
+
+
+
+[.fields-InlineObject19]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| name 
+|  
+| String  
+| Name of the grammar.
+|  
+
+| companyname 
+|  
+| String  
+| Company for the grammar. [optional]
+|  
+
+| description 
+|  
+| String  
+| Description of the grammar this record belongs to. [optional]
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this grammar. [optional]
+|  
+
+| version 
+|  
+| String  
+| Version for the grammar. [optional]
+|  
+
+| formattype 
+|  
+| String  
+| Document format of the grammar.
+|  
+
+| messagetype 
+|  
+| String  
+| Name of the grammar message type.
+|  
+
+| content 
+|  
+| String  
+| Base64 encode string of the grammar.
+| base64 
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject2]
+=== _InlineObject2_ 
+
+
+
+[.fields-InlineObject2]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| filename 
+|  
+| String  
+| The name of the file to create.
+|  
+
+| content 
+|  
+| String  
+| The base64 encoded string representation of the file
+| base64 
+
+|===
+
+
+[#InlineObject20]
+=== _InlineObject20_ 
+
+
+
+[.fields-InlineObject20]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| name 
+|  
+| String  
+| Name of the grammar. [optional]
+|  
+
+| companyname 
+|  
+| String  
+| Company for the grammar. [optional]
+|  
+
+| description 
+|  
+| String  
+| Description of the grammar this record belongs to. [optional]
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this grammar. [optional]
+|  
+
+| version 
+|  
+| String  
+| Version for the grammar. [optional]
+|  
+
+| formattype 
+|  
+| String  
+| Document format of the grammar.
+|  
+
+| messagetype 
+|  
+| String  
+| Name of the grammar message type.
+|  
+
+| file 
+|  
+| File  
+| The file to create a grammar for.
+| binary 
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject21]
+=== _InlineObject21_ 
+
+
+
+[.fields-InlineObject21]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| name 
+|  
+| String  
+| Name of the grammar. [optional]
+|  
+
+| companyname 
+|  
+| String  
+| Company for the grammar. [optional]
+|  
+
+| description 
+|  
+| String  
+| Description of the grammar this record belongs to. [optional]
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this grammar. [optional]
+|  
+
+| version 
+|  
+| String  
+| Version for the grammar. [optional]
+|  
+
+| formattype 
+|  
+| String  
+| Document format of the grammar.
+|  
+
+| messagetype 
+|  
+| String  
+| Name of the grammar message type.
+|  
+
+| content 
+|  
+| String  
+| Base64 encode string of the grammar.
+| base64 
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject22]
+=== _InlineObject22_ 
+
+
+
+[.fields-InlineObject22]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| name 
+|  
+| String  
+| Name of the grammar. [optional]
+|  
+
+| companyname 
+|  
+| String  
+| Company for the grammar. [optional]
+|  
+
+| description 
+|  
+| String  
+| Description of the grammar this record belongs to. [optional]
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this grammar. [optional]
+|  
+
+| version 
+|  
+| String  
+| Version for the grammar. [optional]
+|  
+
+| formattype 
+|  
+| String  
+| Document format of the grammar.
+|  
+
+| messagetype 
+|  
+| String  
+| Name of the grammar message type.
+|  
+
+| file 
+|  
+| File  
+| The file to create a grammar template for.
+| binary 
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject23]
+=== _InlineObject23_ 
+
+
+
+[.fields-InlineObject23]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| name 
+|  
+| String  
+| Name of the grammar. [optional]
+|  
+
+| companyname 
+|  
+| String  
+| Company for the grammar. [optional]
+|  
+
+| description 
+|  
+| String  
+| Description of the grammar this record belongs to. [optional]
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this grammar. [optional]
+|  
+
+| version 
+|  
+| String  
+| Version for the grammar. [optional]
+|  
+
+| formattype 
+|  
+| String  
+| Document format of the grammar. [optional]
+|  
+
+| messagetype 
+|  
+| String  
+| Name of the grammar message type. [optional]
+|  
+
+| content 
+|  
+| String  
+| Base64 encode string of the grammar. [optional]
+| base64 
+
+| permissions 
+|  
+| _api_v1_codes__id__permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject24]
+=== _InlineObject24_ 
+
+
+
+[.fields-InlineObject24]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| name 
+|  
+| String  
+| Name of the grammar. [optional]
+|  
+
+| companyname 
+|  
+| String  
+| Company for the grammar. [optional]
+|  
+
+| description 
+|  
+| String  
+| Description of the grammar this record belongs to. [optional]
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this grammar. [optional]
+|  
+
+| version 
+|  
+| String  
+| Version for the grammar. [optional]
+|  
+
+| formattype 
+|  
+| String  
+| Document format of the grammar. [optional]
+|  
+
+| messagetype 
+|  
+| String  
+| Name of the grammar message type. [optional]
+|  
+
+| content 
+|  
+| String  
+| Base64 encode string of the grammar. [optional]
+| base64 
+
+| permissions 
+|  
+| _api_v1_codes__id__permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject25]
+=== _InlineObject25_ 
+
+
+
+[.fields-InlineObject25]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| from 
+|  
+| Integer  
+| Record number to start the list from. [optional]
+| int32 
+
+| size 
+|  
+| Integer  
+| Number of records to return. [optional]
+| int32 
+
+| sort_by 
+|  
+| String  
+| The property to sor the list by. [optional]
+|  
+
+| sort_order 
+|  
+| String  
+| the order in which to sort the list. [optional]
+|  
+
+| search_after 
+|  
+| List  
+| Array of key/values to get the next set of result after. [optional]
+|  
+
+| access_permission 
+|  
+| String  
+| Access permission authorization level of the records to return. [optional]
+|  
+
+| manage_permission 
+|  
+| String  
+| Manage permission authorization level of the records to return. [optional]
+|  
+
+|===
+
+
+[#InlineObject26]
+=== _InlineObject26_ 
+
+
+
+[.fields-InlineObject26]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| idpartner 
+|  
+| String  
+| ID of the partner to reference.
+|  
+
+| desc 
+|  
+| String  
+| Partner description. [optional]
+|  
+
+| mail 
+|  
+| String  
+| Email address. [optional]
+|  
+
+| cc 
+|  
+| String  
+| Additional email address. [optional]
+|  
+
+| phone1 
+|  
+| String  
+| Phone number. [optional]
+|  
+
+| phone2 
+|  
+| String  
+| Second phone number. [optional]
+|  
+
+| startdate 
+|  
+| String  
+| Starting Date. [optional]
+|  
+
+| enddate 
+|  
+| String  
+| Ending Date. [optional]
+|  
+
+| name 
+|  
+| String  
+| Name [optional]
+|  
+
+| name1 
+|  
+| String  
+| Name 1 [optional]
+|  
+
+| name2 
+|  
+| String  
+| Name 2 [optional]
+|  
+
+| name3 
+|  
+| String  
+| Name 3 [optional]
+|  
+
+| address1 
+|  
+| String  
+| Street Address 1 [optional]
+|  
+
+| address2 
+|  
+| String  
+| Street Address 2 [optional]
+|  
+
+| address3 
+|  
+| String  
+| Street Address 3 [optional]
+|  
+
+| city 
+|  
+| String  
+| City Name [optional]
+|  
+
+| countrysubdivision 
+|  
+| String  
+| State, Province, Country sub division [optional]
+|  
+
+| postalcode 
+|  
+| String  
+| Zip or Postal Code [optional]
+|  
+
+| countrycode 
+|  
+| String  
+| Country Code [optional]
+|  
+
+| attr1 
+|  
+| String  
+| Additional attribute 1 [optional]
+|  
+
+| attr2 
+|  
+| String  
+| Additional attribute 2 [optional]
+|  
+
+| attr3 
+|  
+| String  
+| Additional attribute 3 [optional]
+|  
+
+| attr4 
+|  
+| String  
+| Additional attribute 4 [optional]
+|  
+
+| attr5 
+|  
+| String  
+| Additional attribute 5 [optional]
+|  
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject27]
+=== _InlineObject27_ 
+
+
+
+[.fields-InlineObject27]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| idpartner 
+|  
+| String  
+| ID of the partner to reference [optional]
+|  
+
+| desc 
+|  
+| String  
+| Partner description [optional]
+|  
+
+| mail 
+|  
+| String  
+| Email address [optional]
+|  
+
+| cc 
+|  
+| String  
+| Additional email address [optional]
+|  
+
+| phone1 
+|  
+| String  
+| Phone number [optional]
+|  
+
+| phone2 
+|  
+| String  
+| Second phone number [optional]
+|  
+
+| startdate 
+|  
+| String  
+| Starting Date [optional]
+|  
+
+| enddate 
+|  
+| String  
+| Ending Date [optional]
+|  
+
+| name 
+|  
+| String  
+| Name [optional]
+|  
+
+| name1 
+|  
+| String  
+| Name 1 [optional]
+|  
+
+| name2 
+|  
+| String  
+| Name 2 [optional]
+|  
+
+| name3 
+|  
+| String  
+| Name 3 [optional]
+|  
+
+| address1 
+|  
+| String  
+| Street Address 1 [optional]
+|  
+
+| address2 
+|  
+| String  
+| Street Address 2 [optional]
+|  
+
+| address3 
+|  
+| String  
+| Street Address 3 [optional]
+|  
+
+| city 
+|  
+| String  
+| City Name [optional]
+|  
+
+| countrysubdivision 
+|  
+| String  
+| State, Province, Country sub division [optional]
+|  
+
+| postalcode 
+|  
+| String  
+| Zip or Postal Code [optional]
+|  
+
+| countrycode 
+|  
+| String  
+| Country Code [optional]
+|  
+
+| attr1 
+|  
+| String  
+| Additional attribute 1 [optional]
+|  
+
+| attr2 
+|  
+| String  
+| Additional attribute 2 [optional]
+|  
+
+| attr3 
+|  
+| String  
+| Additional attribute 3 [optional]
+|  
+
+| attr4 
+|  
+| String  
+| Additional attribute 4 [optional]
+|  
+
+| attr5 
+|  
+| String  
+| Additional attribute 5 [optional]
+|  
+
+| permissions 
+|  
+| _api_v1_codes__id__permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject28]
+=== _InlineObject28_ 
+
+
+
+[.fields-InlineObject28]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| from 
+|  
+| Integer  
+| Record number to start the list from. [optional]
+| int32 
+
+| size 
+|  
+| Integer  
+| Number of records to return. [optional]
+| int32 
+
+| sort_by 
+|  
+| String  
+| The property to sor the list by. [optional]
+|  
+
+| sort_order 
+|  
+| String  
+| the order in which to sort the list. [optional]
+|  
+
+| search_after 
+|  
+| List  
+| Array of key/values to get the next set of result after. [optional]
+|  
+
+| access_permission 
+|  
+| String  
+| Access permission authorization level of the records to return. [optional]
+|  
+
+| manage_permission 
+|  
+| String  
+| Manage permission authorization level of the records to return. [optional]
+|  
+
+|===
+
+
+[#InlineObject29]
+=== _InlineObject29_ 
+
+
+
+[.fields-InlineObject29]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| from 
+|  
+| Integer  
+| Record number to start the list from. [optional]
+| int32 
+
+| size 
+|  
+| Integer  
+| Number of records to return. [optional]
+| int32 
+
+| sort_by 
+|  
+| String  
+| The property to sor the list by. [optional]
+|  
+
+| sort_order 
+|  
+| String  
+| the order in which to sort the list. [optional]
+|  
+
+| tscript 
+|  
+| String  
+| Name of the translation map. [optional] - wildcard character &#39;*&#39;
+|  
+
+| from_formattype 
+|  
+| String  
+| From format type of grammar for translation. [optional] - wildcard character &#39;*&#39;
+|  
+
+| from_messagetype 
+|  
+| String  
+| From message type of grammar for translation. [optional] - wildcard character &#39;*&#39;
+|  
+
+| to_formattype 
+|  
+| String  
+| To format type of grammar for translation. [optional] - wildcard character &#39;*&#39;
+|  
+
+| to_messagetype 
+|  
+| String  
+| To message type of grammar for translation. [optional] - wildcard character &#39;*&#39;
+|  
+
+| documenttype 
+|  
+| String  
+| Document type for translation. [optional] - wildcard character &#39;*&#39;
+|  
+
+| companyname 
+|  
+| String  
+| Company name or trading partner name for translation. [optional] - wildcard character &#39;*&#39;
+|  
+
+| partnername 
+|  
+| String  
+| Partner for the translation map. [optional] - wildcard character &#39;*&#39;
+|  
+
+| version 
+|  
+| String  
+| Version of the translation map. [optional] - wildcard character &#39;*&#39;
+|  
+
+| access_permission 
+|  
+| String  
+| Access permission authorization level of the records to return.
+|  
+
+| manage_permission 
+|  
+| String  
+| Manage permission authorization level of the records to return.
+|  
+
+|===
+
+
+[#InlineObject3]
+=== _InlineObject3_ 
+
+
+
+[.fields-InlineObject3]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| content 
+|  
+| String  
+| The base64 encoded string to convert.
+| base64 
+
+|===
+
+
+[#InlineObject30]
+=== _InlineObject30_ 
+
+
+
+[.fields-InlineObject30]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| companyname 
+|  
+| String  
+| Company for the translation map. [optional]
+|  
+
+| partnername 
+|  
+| String  
+| Partner for the translation map. [optional]
+|  
+
+| description 
+|  
+| String  
+| Description of the translation map this record belongs to. [optional]
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this translation map. [optional]
+|  
+
+| version 
+|  
+| String  
+| Version for the translation map. [optional]
+|  
+
+| from_formattype 
+|  
+| String  
+| Document format of the grammar to translate from.
+|  
+
+| from_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate from.
+|  
+
+| frompartner_id 
+|  
+| String  
+| Name of the partner to translate from. [optional]
+|  
+
+| to_formattype 
+|  
+| String  
+| Document format of the grammar to translate to.
+|  
+
+| to_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate to.
+|  
+
+| topartner_id 
+|  
+| String  
+| Name of the partner to translate to. [optional]
+|  
+
+| tscript 
+|  
+| String  
+| Name of the translation map.
+|  
+
+| content 
+|  
+| String  
+| Base64 encode string of the grammar.
+| base64 
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject31]
+=== _InlineObject31_ 
+
+
+
+[.fields-InlineObject31]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| companyname 
+|  
+| String  
+| Company for the translation map. [optional]
+|  
+
+| partnername 
+|  
+| String  
+| Partner for the translation map.
+|  
+
+| description 
+|  
+| String  
+| Description of the translation map this record belongs to. [optional]
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this translation map. [optional]
+|  
+
+| version 
+|  
+| String  
+| Version for the translation map. [optional]
+|  
+
+| from_formattype 
+|  
+| String  
+| Document format of the grammar to translate from.
+|  
+
+| from_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate from.
+|  
+
+| frompartner_id 
+|  
+| String  
+| Name of the partner to translate from. [optional]
+|  
+
+| to_formattype 
+|  
+| String  
+| Document format of the grammar to translate to.
+|  
+
+| to_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate to.
+|  
+
+| topartner_id 
+|  
+| String  
+| Name of the partner to translate to. [optional]
+|  
+
+| tscript 
+|  
+| String  
+| Name of the translation map.
+|  
+
+| file 
+|  
+| File  
+| The file to create a grammar for.
+| binary 
+
+| access_permission 
+|  
+| String  
+| Access permission level for the record.
+|  
+
+| manage_permission 
+|  
+| String  
+| Manage permission level for the record.
+|  
+
+|===
+
+
+[#InlineObject32]
+=== _InlineObject32_ 
+
+
+
+[.fields-InlineObject32]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| companyname 
+|  
+| String  
+| Company for the translation map. [optional]
+|  
+
+| partnername 
+|  
+| String  
+| Partner for the translation map. [optional]
+|  
+
+| description 
+|  
+| String  
+| Description of the translation map this record belongs to. [optional]
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this translation map. [optional]
+|  
+
+| version 
+|  
+| String  
+| Version for the translation map. [optional]
+|  
+
+| from_formattype 
+|  
+| String  
+| Document format of the grammar to translate from. [optional]
+|  
+
+| from_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate from. [optional]
+|  
+
+| frompartner_id 
+|  
+| String  
+| Name of the partner to translate from. [optional]
+|  
+
+| to_formattype 
+|  
+| String  
+| Document format of the grammar to translate to. [optional]
+|  
+
+| to_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate to. [optional]
+|  
+
+| topartner_id 
+|  
+| String  
+| Name of the partner to translate to. [optional]
+|  
+
+| tscript 
+|  
+| String  
+| Name of the translation map. [optional]
+|  
+
+| content 
+|  
+| String  
+| Base64 encode string of the grammar. [optional]
+| base64 
+
+| permissions 
+|  
+| _api_v1_codes__id__permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject33]
+=== _InlineObject33_ 
+
+
+
+[.fields-InlineObject33]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| from 
+|  
+| Integer  
+| Record number to start the list from. [optional]
+| int32 
+
+| size 
+|  
+| Integer  
+| Number of records to return. [optional]
+| int32 
+
+| sort_by 
+|  
+| String  
+| The property to sor the list by. [optional]
+|  
+
+| sort_order 
+|  
+| String  
+| the order in which to sort the list. [optional]
+|  
+
+| search_after 
+|  
+| List  
+| Array of key/values to get the next set of result after. [optional]
+|  
+
+|===
+
+
+[#InlineObject34]
+=== _InlineObject34_ 
+
+
+
+[.fields-InlineObject34]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| user_name 
+|  
+| String  
+| The username of the authorized user.
+|  
+
+| name 
+|  
+| String  
+| The name of the authorized user. [optional]
+|  
+
+| alt_email_1 
+|  
+| String  
+| The alternate email 1 of the authorized user. [optional]
+|  
+
+| alt_email_2 
+|  
+| String  
+| The alternate email 2 of the authorized user. [optional]
+|  
+
+| phone 
+|  
+| String  
+| The phone number of the authorized user. [optional]
+|  
+
+| department 
+|  
+| String  
+| The department of the authorized user. [optional]
+|  
+
+| position 
+|  
+| String  
+| The position of the authorized user. [optional]
+|  
+
+| password 
+|  
+| String  
+| Password for the authorized user. [optional]
+|  
+
+| roles 
+|  
+| List  
+| User permission roles. [optional]
+|  
+
+|===
+
+
+[#InlineObject35]
+=== _InlineObject35_ 
+
+
+
+[.fields-InlineObject35]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| user_name 
+|  
+| String  
+| The username of the authorized user.
+|  
+
+| name 
+|  
+| String  
+| The name of the authorized user. [optional]
+|  
+
+| company_name 
+|  
+| String  
+| The name of the company. [optional]
+|  
+
+| alt_email_1 
+|  
+| String  
+| The alternate email 1 of the authorized user. [optional]
+|  
+
+| alt_email_2 
+|  
+| String  
+| The alternate email 2 of the authorized user. [optional]
+|  
+
+| phone 
+|  
+| String  
+| The phone number of the authorized user. [optional]
+|  
+
+| department 
+|  
+| String  
+| The department of the authorized user. [optional]
+|  
+
+| position 
+|  
+| String  
+| The position of the authorized user. [optional]
+|  
+
+| active 
+|  
+| Integer  
+| Flag for if the authorized user is active. [optional]
+|  
+
+| password 
+|  
+| String  
+| Password for the authorized user. [optional]
+|  
+
+| roles 
+|  
+| List  
+| User permission roles. [optional]
+|  
+
+|===
+
+
+[#InlineObject36]
+=== _InlineObject36_ 
+
+
+
+[.fields-InlineObject36]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| user_name 
+|  
+| String  
+| The username of the authorized user.
+|  
+
+| company_name 
+|  
+| String  
+| The company the authorized user belongs to.
+|  
+
+| name 
+|  
+| String  
+| The name of the authorized user.
+|  
+
+| alt_email_1 
+|  
+| String  
+| The alternate email 1 of the authorized user.
+|  
+
+| alt_email_2 
+|  
+| String  
+| The alternate email 2 of the authorized user.
+|  
+
+| phone 
+|  
+| String  
+| The phone number of the authorized user.
+|  
+
+| department 
+|  
+| String  
+| The department of the authorized user.
+|  
+
+| position 
+|  
+| String  
+| The position of the authorized user.
+|  
+
+|===
+
+
+[#InlineObject4]
+=== _InlineObject4_ 
+
+
+
+[.fields-InlineObject4]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| from 
+|  
+| Integer  
+| Record number to start the list from. [optional]
+| int32 
+
+| size 
+|  
+| Integer  
+| Number of records to return. [optional]
+| int32 
+
+| sort_by 
+|  
+| String  
+| The property to sor the list by. [optional]
+|  
+
+| sort_order 
+|  
+| String  
+| the order in which to sort the list. [optional]
+|  
+
+| search_after 
+|  
+| List  
+| Key/values pairs used to search for the next page of results. [optional]
+|  
+
+| access_permission 
+|  
+| String  
+| Access permission authorization level of the records to return. [optional]
+|  
+
+| manage_permission 
+|  
+| String  
+| Manage permission authorization level of the records to return. [optional]
+|  
+
+|===
+
+
+[#InlineObject5]
+=== _InlineObject5_ 
+
+
+
+[.fields-InlineObject5]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| ccode_id_trigger 
+|  
+| String  
+| Name of the code trigger record name.
+|  
+
+| ccodeid_trigger_description 
+|  
+| String  
+| Number of records to return. [optional]
+|  
+
+| ccodes 
+|  
+| List  of <<_api_v1_codes_ccodes>> 
+| List of code conversions.
+|  
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject6]
+=== _InlineObject6_ 
+
+
+
+[.fields-InlineObject6]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| ccode_id_trigger 
+|  
+| String  
+| Name of the code trigger record name. [optional]
+|  
+
+| ccodeid_trigger_description 
+|  
+| String  
+| Number of records to return. [optional]
+|  
+
+| ccodes 
+|  
+| List  of <<_api_v1_codes_ccodes>> 
+| List of code conversions. [optional]
+|  
+
+| permissions 
+|  
+| _api_v1_codes__id__permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject7]
+=== _InlineObject7_ 
+
+
+
+[.fields-InlineObject7]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| name 
+|  
+| String  
+| The name of the company. [optional]
+|  
+
+| industry 
+|  
+| String  
+| The industry of the company. [optional]
+|  
+
+| contact 
+|  
+| String  
+| The contact name for the company. [optional]
+|  
+
+| email 
+|  
+| String  
+| The contact email for the company. [optional]
+|  
+
+| phone 
+|  
+| String  
+| The phone number of the authorized user. [optional]
+|  
+
+| address1 
+|  
+| String  
+| Street Address 1 [optional]
+|  
+
+| address2 
+|  
+| String  
+| Street Address 2 [optional]
+|  
+
+| address3 
+|  
+| String  
+| Street Address 3 [optional]
+|  
+
+| city 
+|  
+| String  
+| City Name [optional]
+|  
+
+| countrysubdivision 
+|  
+| String  
+| State, Province, Country sub division [optional]
+|  
+
+| postalcode 
+|  
+| String  
+| Zip or Postal Code [optional]
+|  
+
+| countrycode 
+|  
+| String  
+| Country Code [optional]
+|  
+
+|===
+
+
+[#InlineObject8]
+=== _InlineObject8_ 
+
+
+
+[.fields-InlineObject8]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| company_id 
+|  
+| String  
+| ID of the company this control number record belongs to. [optional]
+|  
+
+| company_name 
+|  
+| String  
+| Name of the company this control number record belongs to. [optional]
+|  
+
+| csv_control_number 
+|  
+| _api_v1_control_number_csv_control_number  
+| 
+|  
+
+| edifact_control_number 
+|  
+| _api_v1_control_number_edifact_control_number  
+| 
+|  
+
+| fixed_control_number 
+|  
+| _api_v1_control_number_fixed_control_number  
+| 
+|  
+
+| idoc_control_number 
+|  
+| _api_v1_control_number_idoc_control_number  
+| 
+|  
+
+| json_control_number 
+|  
+| _api_v1_control_number_json_control_number  
+| 
+|  
+
+| tradacoms_control_number 
+|  
+| _api_v1_control_number_tradacoms_control_number  
+| 
+|  
+
+| x12_control_number 
+|  
+| _api_v1_control_number_x12_control_number  
+| 
+|  
+
+| xml_control_number 
+|  
+| _api_v1_control_number_xml_control_number  
+| 
+|  
+
+| permissions 
+|  
+| _api_v1_codes__id__permissions  
+| 
+|  
+
+|===
+
+
+[#InlineObject9]
+=== _InlineObject9_ 
+
+
+
+[.fields-InlineObject9]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| translate_id 
+|  
+| String  
+| ID of the translation map to use for data conversion.
+|  
+
+| acknowledge 
+|  
+| Integer  
+| Flag to create an acknowledgement or not.&lt;br/&gt; For EDI document types primarily. [optional]
+| int32 
+
+| base64 
+|  
+| Integer  
+| Flag to mark string as base64 or not. [optional]
+| int32 
+
+| in_data 
+|  
+| String  
+| Inbound data to convert.
+|  
+
+|===
+
+
+[#InlineResponse200]
+=== _InlineResponse200_ 
+
+
+
+[.fields-InlineResponse200]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| program 
+|  
+| String  
+| The name of the API.
+|  
+
+| version 
+|  
+| String  
+| The version of the API.
+|  
+
+| status 
+|  
+| String  
+| The status of the API.
+|  
+
+| message 
+|  
+| String  
+| The status message.
+|  
+
+|===
+
+
+[#InlineResponse2001]
+=== _InlineResponse2001_ 
+
+
+
+[.fields-InlineResponse2001]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| user_id 
+|  
+| String  
+| The ID of the authorized user.
+|  
+
+| user_name 
+|  
+| String  
+| The name of the authorized user.
+|  
+
+| company 
+|  
+| String  
+| The company the authorized user belongs to.
+|  
+
+| company_id 
+|  
+| String  
+| The Company ID of the authorized user.
+|  
+
+| trading_channel_id 
+|  
+| String  
+| The trading channel the authorized user belongs to. (0 &#x3D; no network)
+|  
+
+| auth_level 
+|  
+| String  
+| The authorization level the authorized user has.
+|  
+
+|===
+
+
+[#InlineResponse20010]
+=== _InlineResponse20010_ 
+
+
+
+[.fields-InlineResponse20010]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| acknowledgement 
+|  
+| String  
+| Base64 encoded string of the acknowledgement.
+| base64 
+
+| acknowledgement_text 
+|  
+| String  
+| Text string of the acknowledgement.
+|  
+
+| count 
+|  
+| Integer  
+| Number of records the data was converted to.
+| int32 
+
+| log_id 
+|  
+| String  
+| Log ID record of the translation process.
+|  
+
+| data 
+|  
+| List  of <<inline_response_200_10_data>> 
+| List of results from the data conversion.
+|  
+
+|===
+
+
+[#InlineResponse20010Data]
+=== _InlineResponse20010Data_ 
+
+
+
+[.fields-InlineResponse20010Data]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| content 
+|  
+| String  
+| Base64 encoded string of the converted data.
+| base64 
+
+| text_content 
+|  
+| String  
+| Text string of the converted data.
+|  
+
+| success 
+|  
+| Boolean  
+| If the conversion was successful.
+|  
+
+| metadata 
+|  
+| inline_response_200_10_metadata  
+| 
+|  
+
+|===
+
+
+[#InlineResponse20010Metadata]
+=== _InlineResponse20010Metadata_ 
+
+Metadata values of the conversion data.
+
+[.fields-InlineResponse20010Metadata]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| from_content_type 
+|  
+| String  
+| MIME Type of the inbound data.
+|  
+
+| from_format_type 
+|  
+| String  
+| Data format of the inbound data.
+|  
+
+| from_message_type 
+|  
+| String  
+| Message Type/Grammar name of the inbound data.
+|  
+
+| from_partner 
+|  
+| String  
+| Partner who sent the inbound data.
+|  
+
+| mapping_script 
+|  
+| String  
+| Translation map to used.
+|  
+
+| reference 
+|  
+| String  
+| Reference number or identifier of the inbound data.
+|  
+
+| test_indicator 
+|  
+| String  
+| Flag indicating test or production for the inbound data.
+|  
+
+| to_content_type 
+|  
+| String  
+| MIME Type of the outbound data.
+|  
+
+| to_format_type 
+|  
+| String  
+| Data format of the outbound data.
+|  
+
+| to_message_type 
+|  
+| String  
+| Message Type/Grammar name of the outbound data.
+|  
+
+| to_partner 
+|  
+| String  
+| Partner who sent the outbound data.
+|  
+
+|===
+
+
+[#InlineResponse20011]
+=== _InlineResponse20011_ 
+
+
+
+[.fields-InlineResponse20011]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| acknowledgement 
+|  
+| String  
+| Base64 encoded string of the acknowledgement.
+| base64 
+
+| acknowledgement_text 
+|  
+| String  
+| Text string of the acknowledgement.
+|  
+
+| log_id 
+|  
+| String  
+| Log ID record of the translation process.
+|  
+
+|===
+
+
+[#InlineResponse20012]
+=== _InlineResponse20012_ 
+
+
+
+[.fields-InlineResponse20012]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| count 
+|  
+| Integer  
+| Count of converted objects.
+| int32 
+
+| data 
+|  
+| List  of <<inline_response_200_12_data>> 
+| List of grammars created.
+|  
+
+| log_id 
+|  
+| String  
+| Log ID record of the translation process.
+|  
+
+|===
+
+
+[#InlineResponse20012Data]
+=== _InlineResponse20012Data_ 
+
+Created grammar.
+
+[.fields-InlineResponse20012Data]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| content 
+|  
+| String  
+| Base64 encoded string of the grammar.
+| base64 
+
+| text_content 
+|  
+| String  
+| Text string of the grammar.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+
+[#InlineResponse20013]
+=== _InlineResponse20013_ 
+
+
+
+[.fields-InlineResponse20013]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| count 
+|  
+| Integer  
+| Count of converted objects.
+| int32 
+
+| data 
+|  
+| List  of <<inline_response_200_13_data>> 
+| List of grammars created.
+|  
+
+| log_id 
+|  
+| String  
+| Log ID record of the translation process.
+|  
+
+|===
+
+
+[#InlineResponse20013Data]
+=== _InlineResponse20013Data_ 
+
+Created grammar.
+
+[.fields-InlineResponse20013Data]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| content 
+|  
+| String  
+| Base64 encoded string of the grammar.
+| base64 
+
+| text_content 
+|  
+| String  
+| Text string of the grammar.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+
+[#InlineResponse20014]
+=== _InlineResponse20014_ 
+
+
+
+[.fields-InlineResponse20014]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| meta 
+|  
+| inline_response_200_14_meta  
+| 
+|  
+
+| results 
+|  
+| List  of <<inline_response_200_14_results>> 
+| List of grammar records.
+|  
+
+|===
+
+
+[#InlineResponse20014Meta]
+=== _InlineResponse20014Meta_ 
+
+
+
+[.fields-InlineResponse20014Meta]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| count 
+|  
+| Integer  
+| Number of records returned.
+| int32 
+
+| search_after_values 
+|  
+| List  
+| Key/Value pairs for the last record, used to search for the next page of results.
+|  
+
+| total 
+|  
+| Integer  
+| Total number of records.
+| int32 
+
+|===
+
+
+[#InlineResponse20014Results]
+=== _InlineResponse20014Results_ 
+
+
+
+[.fields-InlineResponse20014Results]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| ID of the record.
+|  
+
+| name 
+|  
+| String  
+| Name of the grammar.
+|  
+
+| companyname 
+|  
+| String  
+| Company for the grammar..
+|  
+
+| description 
+|  
+| String  
+| Description of the grammar this record belongs to.
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this grammar.
+|  
+
+| version 
+|  
+| String  
+| Version for the grammar.
+|  
+
+| formattype 
+|  
+| String  
+| Document format of the grammar.
+|  
+
+| messagetype 
+|  
+| String  
+| Name of the grammar message type.
+|  
+
+|===
+
+
+[#InlineResponse20015]
+=== _InlineResponse20015_ 
+
+
+
+[.fields-InlineResponse20015]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| meta 
+|  
+| inline_response_200_15_meta  
+| 
+|  
+
+| results 
+|  
+| List  of <<inline_response_200_14_results>> 
+| List of grammar records.
+|  
+
+|===
+
+
+[#InlineResponse20015Meta]
+=== _InlineResponse20015Meta_ 
+
+
+
+[.fields-InlineResponse20015Meta]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| count 
+|  
+| Integer  
+| Number of records returned.
+| int32 
+
+| total 
+|  
+| Integer  
+| Total number of records.
+| int32 
+
+|===
+
+
+[#InlineResponse20016]
+=== _InlineResponse20016_ 
+
+
+
+[.fields-InlineResponse20016]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| name 
+|  
+| String  
+| Name of the grammar.
+|  
+
+| companyname 
+|  
+| String  
+| Company for the grammar.
+|  
+
+| description 
+|  
+| String  
+| Description of the grammar this record belongs to.
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this grammar.
+|  
+
+| version 
+|  
+| String  
+| Version for the grammar.
+|  
+
+| formattype 
+|  
+| String  
+| Document format of the grammar.
+|  
+
+| messagetype 
+|  
+| String  
+| Name of the grammar message type.
+|  
+
+| content 
+|  
+| String  
+| Base64 encode string of the grammar.
+| base64 
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineResponse20017]
+=== _InlineResponse20017_ 
+
+
+
+[.fields-InlineResponse20017]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the record
+|  
+
+| result 
+|  
+| String  
+| Text description of the record operation.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+
+[#InlineResponse20018]
+=== _InlineResponse20018_ 
+
+
+
+[.fields-InlineResponse20018]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| log_info 
+|  
+| List  of <<string>> 
+| Array of Log lines.
+|  
+
+|===
+
+
+[#InlineResponse20019]
+=== _InlineResponse20019_ 
+
+
+
+[.fields-InlineResponse20019]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| meta 
+|  
+| inline_response_200_14_meta  
+| 
+|  
+
+| results 
+|  
+| List  of <<inline_response_200_19_results>> 
+| List of control number records.
+|  
+
+|===
+
+
+[#InlineResponse20019Results]
+=== _InlineResponse20019Results_ 
+
+
+
+[.fields-InlineResponse20019Results]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| ID of the record.
+|  
+
+| idpartner 
+|  
+| String  
+| ID of the partner to reference.
+|  
+
+| desc 
+|  
+| String  
+| Partner description.
+|  
+
+| mail 
+|  
+| String  
+| Email address.
+|  
+
+| cc 
+|  
+| String  
+| Additional email address.
+|  
+
+| phone1 
+|  
+| String  
+| Phone number.
+|  
+
+| phone2 
+|  
+| String  
+| Second phone number.
+|  
+
+| startdate 
+|  
+| String  
+| Second phone number.
+|  
+
+| enddate 
+|  
+| String  
+| Second phone number.
+|  
+
+| name 
+|  
+| String  
+| Name
+|  
+
+| name1 
+|  
+| String  
+| Name 1
+|  
+
+| name2 
+|  
+| String  
+| Name 2
+|  
+
+| name3 
+|  
+| String  
+| Name 3
+|  
+
+| address1 
+|  
+| String  
+| Street Address 1
+|  
+
+| address2 
+|  
+| String  
+| Street Address 2
+|  
+
+| address3 
+|  
+| String  
+| Street Address 3
+|  
+
+| city 
+|  
+| String  
+| City Name
+|  
+
+| countrysubdivision 
+|  
+| String  
+| State, Province, Country sub division
+|  
+
+| postalcode 
+|  
+| String  
+| Zip or Postal Code
+|  
+
+| countrycode 
+|  
+| String  
+| Country Code
+|  
+
+| attr1 
+|  
+| String  
+| Additional attribute 1
+|  
+
+| attr2 
+|  
+| String  
+| Additional attribute 2
+|  
+
+| attr3 
+|  
+| String  
+| Additional attribute 3
+|  
+
+| attr4 
+|  
+| String  
+| Additional attribute 4
+|  
+
+| attr5 
+|  
+| String  
+| Additional attribute 5
+|  
+
+|===
+
+
+[#InlineResponse2002]
+=== _InlineResponse2002_ 
+
+
+
+[.fields-InlineResponse2002]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| result 
+|  
+| String  
+| Base64 encoded character string.
+| base64 
+
+|===
+
+
+[#InlineResponse20020]
+=== _InlineResponse20020_ 
+
+
+
+[.fields-InlineResponse20020]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| idpartner 
+|  
+| String  
+| ID of the partner to reference.
+|  
+
+| desc 
+|  
+| String  
+| Partner description
+|  
+
+| mail 
+|  
+| String  
+| Email address
+|  
+
+| cc 
+|  
+| String  
+| Additional email address
+|  
+
+| phone1 
+|  
+| String  
+| Phone number
+|  
+
+| phone2 
+|  
+| String  
+| Second phone number
+|  
+
+| startdate 
+|  
+| String  
+| Starting Date
+|  
+
+| enddate 
+|  
+| String  
+| Ending Date
+|  
+
+| name 
+|  
+| String  
+| Name
+|  
+
+| name1 
+|  
+| String  
+| Name 1
+|  
+
+| name2 
+|  
+| String  
+| Name 2
+|  
+
+| name3 
+|  
+| String  
+| Name 3
+|  
+
+| address1 
+|  
+| String  
+| Street Address 1
+|  
+
+| address2 
+|  
+| String  
+| Street Address 2
+|  
+
+| address3 
+|  
+| String  
+| Street Address 
+|  
+
+| city 
+|  
+| String  
+| City Name
+|  
+
+| countrysubdivision 
+|  
+| String  
+| State, Province, Country sub division
+|  
+
+| postalcode 
+|  
+| String  
+| Zip or Postal Code
+|  
+
+| countrycode 
+|  
+| String  
+| Country Code
+|  
+
+| attr1 
+|  
+| String  
+| Additional attribute 1
+|  
+
+| attr2 
+|  
+| String  
+| Additional attribute 2
+|  
+
+| attr3 
+|  
+| String  
+| Additional attribute 3
+|  
+
+| attr4 
+|  
+| String  
+| Additional attribute 4
+|  
+
+| attr5 
+|  
+| String  
+| Additional attribute 5
+|  
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineResponse20021]
+=== _InlineResponse20021_ 
+
+
+
+[.fields-InlineResponse20021]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| meta 
+|  
+| inline_response_200_14_meta  
+| 
+|  
+
+| results 
+|  
+| List  of <<inline_response_200_21_results>> 
+| List of grammar records.
+|  
+
+|===
+
+
+[#InlineResponse20021Results]
+=== _InlineResponse20021Results_ 
+
+
+
+[.fields-InlineResponse20021Results]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| ID of the record.
+|  
+
+| companyname 
+|  
+| String  
+| Company for the translation map.
+|  
+
+| partnername 
+|  
+| String  
+| Partner for the translation map.
+|  
+
+| description 
+|  
+| String  
+| Description of the translation map this record belongs to.
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this translation map.
+|  
+
+| version 
+|  
+| String  
+| Version for the translation map.
+|  
+
+| from_formattype 
+|  
+| String  
+| Document format of the grammar to translate from.
+|  
+
+| from_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate from.
+|  
+
+| frompartner_id 
+|  
+| String  
+| Name of the partner to translate from.
+|  
+
+| to_formattype 
+|  
+| String  
+| Document format of the grammar to translate to.
+|  
+
+| to_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate to.
+|  
+
+| topartner_id 
+|  
+| String  
+| Name of the partner to translate to.
+|  
+
+| tscript 
+|  
+| String  
+| Name of the translation map.
+|  
+
+|===
+
+
+[#InlineResponse20022]
+=== _InlineResponse20022_ 
+
+
+
+[.fields-InlineResponse20022]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| meta 
+|  
+| inline_response_200_15_meta  
+| 
+|  
+
+| results 
+|  
+| List  of <<inline_response_200_22_results>> 
+| List of grammar records.
+|  
+
+|===
+
+
+[#InlineResponse20022Results]
+=== _InlineResponse20022Results_ 
+
+
+
+[.fields-InlineResponse20022Results]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| ID of the record.
+|  
+
+| companyname 
+|  
+| String  
+| Company for the translation map.
+|  
+
+| partnername 
+|  
+| String  
+| Partner for the translation map.
+|  
+
+| description 
+|  
+| String  
+| Description of the translation map this record belongs to.
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this translation map.
+|  
+
+| version 
+|  
+| String  
+| Version for the translation map.
+|  
+
+| from_formattype 
+|  
+| String  
+| Document format of the grammar to translate from.
+|  
+
+| from_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate from.
+|  
+
+| frompartner_id 
+|  
+| String  
+| Name of the partner to translate from.
+|  
+
+| to_formattype 
+|  
+| String  
+| Document format of the grammar to translate to.
+|  
+
+| to_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate to.
+|  
+
+| topartner_id 
+|  
+| String  
+| Name of the partner to translate to.
+|  
+
+| tscript 
+|  
+| String  
+| Name of the translation map.
+|  
+
+|===
+
+
+[#InlineResponse20023]
+=== _InlineResponse20023_ 
+
+
+
+[.fields-InlineResponse20023]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| companyname 
+|  
+| String  
+| Company for the translation map.
+|  
+
+| partnername 
+|  
+| String  
+| Partner for the translation map.
+|  
+
+| description 
+|  
+| String  
+| Description of the translation map this record belongs to.
+|  
+
+| documenttype 
+|  
+| String  
+| Type of document for this translation map.
+|  
+
+| version 
+|  
+| String  
+| Version for the translation map.
+|  
+
+| from_formattype 
+|  
+| String  
+| Document format of the grammar to translate from.
+|  
+
+| from_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate from.
+|  
+
+| frompartner_id 
+|  
+| String  
+| Name of the partner to translate from.
+|  
+
+| to_formattype 
+|  
+| String  
+| Document format of the grammar to translate to.
+|  
+
+| to_messagetype 
+|  
+| String  
+| Name of the grammar message type to translate to.
+|  
+
+| topartner_id 
+|  
+| String  
+| Name of the partner to translate to.
+|  
+
+| tscript 
+|  
+| String  
+| Name of the translation map.
+|  
+
+| content 
+|  
+| String  
+| Base64 encode string of the grammar.
+| base64 
+
+| translation_cost 
+|  
+| inline_response_200_23_translation_cost  
+| 
+|  
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineResponse20023TranslationCost]
+=== _InlineResponse20023TranslationCost_ 
+
+The cost of credits for this translation.
+
+[.fields-InlineResponse20023TranslationCost]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| file_credits 
+|  
+| Integer  
+| The credit cost for returning a file.
+|  
+
+| string_credits 
+|  
+| Integer  
+| The credit cost for returning a string or base64 string.
+|  
+
+|===
+
+
+[#InlineResponse20024]
+=== _InlineResponse20024_ 
+
+
+
+[.fields-InlineResponse20024]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| meta 
+|  
+| inline_response_200_14_meta  
+| 
+|  
+
+| results 
+|  
+| List  of <<inline_response_200_24_results>> 
+| List of records.
+|  
+
+|===
+
+
+[#InlineResponse20024Results]
+=== _InlineResponse20024Results_ 
+
+
+
+[.fields-InlineResponse20024Results]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the authorized user.
+|  
+
+| user_name 
+|  
+| String  
+| The username of the authorized user.
+|  
+
+| name 
+|  
+| String  
+| The name of the authorized user.
+|  
+
+| company_name 
+|  
+| String  
+| The company the authorized user belongs to.
+|  
+
+| company_id 
+|  
+| String  
+| The Company ID of the authorized user.
+|  
+
+| alt_email_1 
+|  
+| String  
+| The alternate email 1 of the authorized user.
+|  
+
+| alt_email_2 
+|  
+| String  
+| The alternate email 2 of the authorized user.
+|  
+
+| phone 
+|  
+| String  
+| The phone number of the authorized user.
+|  
+
+| department 
+|  
+| String  
+| The department of the authorized user.
+|  
+
+| position 
+|  
+| String  
+| The position of the authorized user.
+|  
+
+| roles 
+|  
+| List  
+| The permission roles of the authorized user.
+|  
+
+|===
+
+
+[#InlineResponse20025]
+=== _InlineResponse20025_ 
+
+
+
+[.fields-InlineResponse20025]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the authorized user.
+|  
+
+| user_name 
+|  
+| String  
+| The username of the authorized user.
+|  
+
+| name 
+|  
+| String  
+| The name of the authorized user.
+|  
+
+| company_name 
+|  
+| String  
+| The company the authorized user belongs to.
+|  
+
+| company_id 
+|  
+| String  
+| The Company ID of the authorized user.
+|  
+
+| apikey 
+|  
+| String  
+| The API-Key of the authorized user to access this service.
+|  
+
+| alt_email_1 
+|  
+| String  
+| The alternate email 1 of the authorized user.
+|  
+
+| alt_email_2 
+|  
+| String  
+| The alternate email 2 of the authorized user.
+|  
+
+| phone 
+|  
+| String  
+| The phone number of the authorized user.
+|  
+
+| department 
+|  
+| String  
+| The department of the authorized user.
+|  
+
+| position 
+|  
+| String  
+| The position of the authorized user.
+|  
+
+|===
+
+
+[#InlineResponse2003]
+=== _InlineResponse2003_ 
+
+
+
+[.fields-InlineResponse2003]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| result 
+|  
+| String  
+| The Base64 encoded string.
+|  
+
+|===
+
+
+[#InlineResponse2004]
+=== _InlineResponse2004_ 
+
+
+
+[.fields-InlineResponse2004]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| result 
+|  
+| String  
+| Text string.
+|  
+
+|===
+
+
+[#InlineResponse2005]
+=== _InlineResponse2005_ 
+
+
+
+[.fields-InlineResponse2005]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| meta 
+|  
+| inline_response_200_5_meta  
+| 
+|  
+
+| results 
+|  
+| List  of <<inline_response_200_5_results>> 
+| List of conversion code triggers or code list names.
+|  
+
+|===
+
+
+[#InlineResponse2005Meta]
+=== _InlineResponse2005Meta_ 
+
+
+
+[.fields-InlineResponse2005Meta]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| count 
+|  
+| Integer  
+| Number of records returned.
+| int32 
+
+| total 
+|  
+| Integer  
+| Total number of records.
+| int32 
+
+| search_after_values 
+|  
+| List  
+| Key/Value pairs for the last record, used to search for the next page of results.
+|  
+
+|===
+
+
+[#InlineResponse2005Results]
+=== _InlineResponse2005Results_ 
+
+
+
+[.fields-InlineResponse2005Results]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| ID of the conversion code record.
+|  
+
+| ccode_id_trigger 
+|  
+| String  
+| Name of the conversion code record.
+|  
+
+| ccodeid_trigger_description 
+|  
+| String  
+| Description of the conversion code record.
+|  
+
+|===
+
+
+[#InlineResponse2006]
+=== _InlineResponse2006_ 
+
+
+
+[.fields-InlineResponse2006]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| ccode_id_trigger 
+|  
+| String  
+| Name of the code trigger record name.
+|  
+
+| ccodeid_trigger_description 
+|  
+| String  
+| Number of records to return
+|  
+
+| ccodes 
+|  
+| List  of <<_api_v1_codes_ccodes>> 
+| List of code conversions.
+|  
+
+| permissions 
+|  
+| _api_v1_codes_permissions  
+| 
+|  
+
+|===
+
+
+[#InlineResponse2007]
+=== _InlineResponse2007_ 
+
+
+
+[.fields-InlineResponse2007]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the record
+|  
+
+| result 
+|  
+| String  
+| Text description of the record operation.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+
+[#InlineResponse2008]
+=== _InlineResponse2008_ 
+
+
+
+[.fields-InlineResponse2008]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the company.
+|  
+
+| name 
+|  
+| String  
+| The name of the company.
+|  
+
+| industry 
+|  
+| String  
+| The industry of the company.
+|  
+
+| contact 
+|  
+| String  
+| The contact name for the company.
+|  
+
+| email 
+|  
+| String  
+| The contact email for the company.
+|  
+
+| phone 
+|  
+| String  
+| The phone number of the authorized user.
+|  
+
+| address1 
+|  
+| String  
+| Street Address 1
+|  
+
+| address2 
+|  
+| String  
+| Street Address 2
+|  
+
+| address3 
+|  
+| String  
+| Street Address 3
+|  
+
+| city 
+|  
+| String  
+| City Name
+|  
+
+| countrysubdivision 
+|  
+| String  
+| State, Province, Country sub division
+|  
+
+| postalcode 
+|  
+| String  
+| Zip or Postal Code
+|  
+
+| countrycode 
+|  
+| String  
+| Country Code
+|  
+
+| billing 
+|  
+| inline_response_200_8_billing  
+| 
+|  
+
+|===
+
+
+[#InlineResponse2008Billing]
+=== _InlineResponse2008Billing_ 
+
+Billing information.
+
+[.fields-InlineResponse2008Billing]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| credits 
+|  
+| Integer  
+| Credits available for translation.
+|  
+
+| total_credits_used 
+|  
+| String  
+| Total credits used for translation.
+|  
+
+| trial_credits 
+|  
+| String  
+| Trial credits available for translation.
+|  
+
+|===
+
+
+[#InlineResponse2009]
+=== _InlineResponse2009_ 
+
+
+
+[.fields-InlineResponse2009]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| company_id 
+|  
+| String  
+| ID of the company this control number record belongs to.
+|  
+
+| company_name 
+|  
+| String  
+| Name of the company this control number record belongs to.
+|  
+
+| csv_control_number 
+|  
+| inline_response_200_9_csv_control_number  
+| 
+|  
+
+| edifact_control_number 
+|  
+| inline_response_200_9_edifact_control_number  
+| 
+|  
+
+| fixed_control_number 
+|  
+| inline_response_200_9_fixed_control_number  
+| 
+|  
+
+| idoc_control_number 
+|  
+| inline_response_200_9_idoc_control_number  
+| 
+|  
+
+| json_control_number 
+|  
+| inline_response_200_9_json_control_number  
+| 
+|  
+
+| tradacoms_control_number 
+|  
+| inline_response_200_9_tradacoms_control_number  
+| 
+|  
+
+| x12_control_number 
+|  
+| inline_response_200_9_x12_control_number  
+| 
+|  
+
+| xml_control_number 
+|  
+| inline_response_200_9_xml_control_number  
+| 
+|  
+
+|===
+
+
+[#InlineResponse2009CsvControlNumber]
+=== _InlineResponse2009CsvControlNumber_ 
+
+Values of control numbers for csv records.
+
+[.fields-InlineResponse2009CsvControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number.
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#InlineResponse2009EdifactControlNumber]
+=== _InlineResponse2009EdifactControlNumber_ 
+
+Values of control numbers for edifact records.
+
+[.fields-InlineResponse2009EdifactControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number.
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#InlineResponse2009FixedControlNumber]
+=== _InlineResponse2009FixedControlNumber_ 
+
+Values of control numbers for fixed position records.
+
+[.fields-InlineResponse2009FixedControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number.
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#InlineResponse2009IdocControlNumber]
+=== _InlineResponse2009IdocControlNumber_ 
+
+Values of control numbers for idoc position records.
+
+[.fields-InlineResponse2009IdocControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number.
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#InlineResponse2009JsonControlNumber]
+=== _InlineResponse2009JsonControlNumber_ 
+
+Values of control numbers for json position records.
+
+[.fields-InlineResponse2009JsonControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number.
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#InlineResponse2009TradacomsControlNumber]
+=== _InlineResponse2009TradacomsControlNumber_ 
+
+Values of control numbers for tradacoms position records.
+
+[.fields-InlineResponse2009TradacomsControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number.
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#InlineResponse2009X12ControlNumber]
+=== _InlineResponse2009X12ControlNumber_ 
+
+Values of control numbers for x12 position records.
+
+[.fields-InlineResponse2009X12ControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number.
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#InlineResponse2009XmlControlNumber]
+=== _InlineResponse2009XmlControlNumber_ 
+
+Values of control numbers for xml position records.
+
+[.fields-InlineResponse2009XmlControlNumber]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| general 
+|  
+| Integer  
+| Current/default control number.
+| int32 
+
+| parter_id 
+|  
+| Integer  
+| Current control number for a specific partner.
+| int32 
+
+|===
+
+
+[#InlineResponse201]
+=== _InlineResponse201_ 
+
+
+
+[.fields-InlineResponse201]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the record
+|  
+
+| result 
+|  
+| String  
+| Text description of the record operation.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+
+[#InlineResponse2011]
+=== _InlineResponse2011_ 
+
+
+
+[.fields-InlineResponse2011]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the record
+|  
+
+| result 
+|  
+| String  
+| Text description of the record operation.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+
+[#InlineResponse202]
+=== _InlineResponse202_ 
+
+
+
+[.fields-InlineResponse202]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the record
+|  
+
+| result 
+|  
+| String  
+| Text description of the record operation.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+
+[#InlineResponse2021]
+=== _InlineResponse2021_ 
+
+
+
+[.fields-InlineResponse2021]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the record
+|  
+
+| result 
+|  
+| String  
+| Text description of the record operation.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+
+[#InlineResponse2022]
+=== _InlineResponse2022_ 
+
+
+
+[.fields-InlineResponse2022]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the record.
+|  
+
+| apikey 
+|  
+| String  
+| The new api-key for this authorized user.
+|  
+
+| result 
+|  
+| String  
+| Text description of the record operation.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+
+[#InlineResponse2023]
+=== _InlineResponse2023_ 
+
+
+
+[.fields-InlineResponse2023]
+[cols="2,1,2,4,1"]
+|===         
+| Field Name| Required| Type| Description| Format
+
+| id 
+|  
+| String  
+| The ID of the record.
+|  
+
+| result 
+|  
+| String  
+| Text description of the record operation.
+|  
+
+| success 
+|  
+| Boolean  
+| If the operation was successful.
+|  
+
+|===
+
+

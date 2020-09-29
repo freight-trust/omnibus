@@ -1,0 +1,1289 @@
+= OpenAPI specification for Track & Trace
+2.0.0
+:toc: left
+:numbered:
+:toclevels: 3
+:source-highlighter: highlightjs
+:keywords: openapi, rest, OpenAPI specification for Track &amp; Trace
+:specDir:
+:snippetDir:
+:generator-template: v1 2019-12-20
+:info-url: https://freighttrust.com
+:app-name:  OpenAPI specification for Track &amp; Trace
+
+[abstract]
+.Abstract
+API specification issued by DCSA.org
+Enhancements made by Freight Trust and Clearing
+
+
+// markup not found, no include::{specDir}intro.adoc[opts=optional]
+
+
+
+== Endpoints
+
+
+[.Events]
+=== Events
+
+
+[.eventsEventIDGet]
+==== eventsEventIDGet
+
+`GET /events/{eventID}`
+
+Find events by eventID.
+
+===== Description
+
+Returns event with the specified eventID.
+
+
+// markup not found, no include::{specDir}events/\{eventID\}/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===
+|Name| Description| Required| Default| Pattern
+
+| eventID
+| The ID of the event to receive
+| X
+| null
+|
+
+|===
+
+
+
+
+
+
+===== Return Type
+
+
+<<oneOf&lt;transportEvent,shipmentEvent,equipmentEvent&gt;>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===
+| Code | Message | Datatype
+
+
+| 200
+| Successful operation
+|  <<oneOf&lt;transportEvent,shipmentEvent,equipmentEvent&gt;>>
+
+
+| 0
+| Unexpected error
+|  <<error>>
+
+|===
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}events/\{eventID\}/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}events/\{eventID\}/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :events/{eventID}/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}events/\{eventID\}/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.eventsGet]
+==== eventsGet
+
+`GET /events`
+
+Find events.
+
+===== Description
+
+Returns all events filtered by the parameters.
+
+
+// markup not found, no include::{specDir}events/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+====== Query Parameters
+
+[cols="2,3,1,1,1"]
+|===
+|Name| Description| Required| Default| Pattern
+
+| eventType
+| The type of event(s) to filter by. <<eventType>>
+| -
+| [&quot;EQUIPMENT&quot;,&quot;SHIPMENT&quot;,&quot;TRANSPORT&quot;]
+|
+
+| bookingReference
+| The identifier for a shipment, which is issued by and unique within each of the carriers.
+| -
+| null
+|
+
+| transportDocumentID
+| The Transport Document ID number is an identifier that links to a shipment, i.e. a Bill of Lading or a Sea Waybill. A bill of lading is the document of title to the goods issued to the customer which confirms the carrier&#39;s receipt of the cargo from the customer, acknowledging goods being shipped and specifying the terms of delivery. The Sea Waybill is a simpler document, the main difference being that it is non-negotiable.
+| -
+| null
+|
+
+| equipmentReference
+| The unique identifier for the equipment, which should follow the BIC ISO Container Identification Number where possible.
+| -
+| null
+|
+
+| scheduleID
+| ID uniquely identifying a schedule, to filter events by.
+| -
+| null
+|
+
+| transportCallID
+| ID uniquely identifying a transport call, to filter events by.
+| -
+| null
+|
+
+| limit
+| Maximum number of items to return.
+| -
+| null
+|
+
+| cursor
+| A server generated value to specify a specific point in a collection result, used for pagination.
+| -
+| null
+|
+
+|===
+
+
+===== Return Type
+
+
+<<List>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===
+| Code | Message | Datatype
+
+
+| 200
+| Successful operation
+| List[<<anyOf&lt;transportEvent,shipmentEvent,equipmentEvent&gt;>>]
+
+
+| 0
+| Unexpected error
+|  <<error>>
+
+|===
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}events/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}events/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :events/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}events/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.Subscriptions]
+=== Subscriptions
+
+
+[.eventSubscriptionsGet]
+==== eventSubscriptionsGet
+
+`GET /event-subscriptions`
+
+Receive a list of your active event subscriptions
+
+===== Description
+
+
+
+
+// markup not found, no include::{specDir}event-subscriptions/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+
+
+===== Return Type
+
+array[<<eventSubscription>>]
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===
+| Code | Message | Datatype
+
+
+| 200
+| Returns a list of event subscriptions
+| List[<<eventSubscription>>]
+
+|===
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :event-subscriptions/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}event-subscriptions/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.eventSubscriptionsPost]
+==== eventSubscriptionsPost
+
+`POST /event-subscriptions`
+
+Create an event subscription
+
+===== Description
+
+
+
+
+// markup not found, no include::{specDir}event-subscriptions/POST/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===
+|Name| Description| Required| Default| Pattern
+
+| EventSubscriptionBody
+| Parameters used to configure the subscription <<EventSubscriptionBody>>
+| X
+|
+|
+
+|===
+
+
+
+
+
+===== Return Type
+
+<<eventSubscription>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===
+| Code | Message | Datatype
+
+
+| 201
+| Subscription created
+|  <<eventSubscription>>
+
+
+| 0
+| Unexpected error
+|  <<error>>
+
+|===
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/POST/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/POST/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :event-subscriptions/POST/POST.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}event-subscriptions/POST/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.eventSubscriptionsSubscriptionIDDelete]
+==== eventSubscriptionsSubscriptionIDDelete
+
+`DELETE /event-subscriptions/{subscriptionID}`
+
+Stop an event subscription, using the subscription ID
+
+===== Description
+
+
+
+
+// markup not found, no include::{specDir}event-subscriptions/\{subscriptionID\}/DELETE/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===
+|Name| Description| Required| Default| Pattern
+
+| subscriptionID
+|
+| X
+| null
+|
+
+|===
+
+
+
+
+
+
+===== Return Type
+
+
+
+-
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===
+| Code | Message | Datatype
+
+
+| 204
+| Subscription stopped
+|  <<>>
+
+
+| 0
+| Unexpected error
+|  <<error>>
+
+|===
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/\{subscriptionID\}/DELETE/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/\{subscriptionID\}/DELETE/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :event-subscriptions/{subscriptionID}/DELETE/DELETE.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}event-subscriptions/\{subscriptionID\}/DELETE/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.eventSubscriptionsSubscriptionIDGet]
+==== eventSubscriptionsSubscriptionIDGet
+
+`GET /event-subscriptions/{subscriptionID}`
+
+Find event subscription by subscription ID
+
+===== Description
+
+
+
+
+// markup not found, no include::{specDir}event-subscriptions/\{subscriptionID\}/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===
+|Name| Description| Required| Default| Pattern
+
+| subscriptionID
+| The universal unique ID of the subscription to receive.
+| X
+| null
+|
+
+|===
+
+
+
+
+
+
+===== Return Type
+
+<<eventSubscription>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===
+| Code | Message | Datatype
+
+
+| 200
+| Subscription returned
+|  <<eventSubscription>>
+
+
+| 0
+| Unexpected error
+|  <<error>>
+
+|===
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/\{subscriptionID\}/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/\{subscriptionID\}/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :event-subscriptions/{subscriptionID}/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}event-subscriptions/\{subscriptionID\}/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[.eventSubscriptionsSubscriptionIDPut]
+==== eventSubscriptionsSubscriptionIDPut
+
+`PUT /event-subscriptions/{subscriptionID}`
+
+Alter an event subscription
+
+===== Description
+
+
+
+
+// markup not found, no include::{specDir}event-subscriptions/\{subscriptionID\}/PUT/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+====== Path Parameters
+
+[cols="2,3,1,1,1"]
+|===
+|Name| Description| Required| Default| Pattern
+
+| subscriptionID
+|
+| X
+| null
+|
+
+|===
+
+===== Body Parameter
+
+[cols="2,3,1,1,1"]
+|===
+|Name| Description| Required| Default| Pattern
+
+| EventSubscription
+| Parameters used to configure the subscription <<EventSubscription>>
+| X
+|
+|
+
+|===
+
+
+
+
+
+===== Return Type
+
+<<eventSubscription>>
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.http response codes
+[cols="2,3,1"]
+|===
+| Code | Message | Datatype
+
+
+| 200
+| Subscription updated
+|  <<eventSubscription>>
+
+
+| 0
+| Unexpected error
+|  <<error>>
+
+|===
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/\{subscriptionID\}/PUT/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}event-subscriptions/\{subscriptionID\}/PUT/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :event-subscriptions/{subscriptionID}/PUT/PUT.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}event-subscriptions/\{subscriptionID\}/PUT/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[#models]
+== Models
+
+
+[#EmptyIndicatorCode]
+=== _EmptyIndicatorCode_
+
+Code to denote whether the equipment is empty or laden.
+
+[.fields-EmptyIndicatorCode]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+|===
+
+
+[#EquipmentEvent]
+=== _EquipmentEvent_
+
+The equipment event entity is a specialization of the event entity to support specification of data that only applies to an equipment event.
+
+[.fields-EquipmentEvent]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| eventID
+| X
+| String
+| The unique identifier for the Equipment Event ID/Transport Event ID/Shipment Event ID.
+|
+
+| eventType
+| X
+| String
+|
+|  _Enum:_ EQUIPMENT,
+
+| eventDateTime
+| X
+| Date
+| The local date and time, where the event took place, in ISO 8601 format.
+| date-time
+
+| eventClassifierCode
+| X
+| eventClassifierCode
+|
+|
+
+| eventTypeCode
+| X
+| String
+| Unique identifier for Event Type Code. For equipment events this can be: - LOAD (Load) - DISC (Discharge) - GTIN (Gate in) - GTOT (Gate out) - STUF (Stuffing) - STRP (Stripping)
+|  _Enum:_ LOAD, DISC, GTIN, GTOT, STUF, STRP,
+
+| transportCallID
+|
+| BigDecimal
+| The unique identifier for a transport call
+|
+
+| equipmentReference
+|
+| String
+| The unique identifier for the equipment, which should follow the BIC ISO Container Identification Number where possible. If a container is not yet assigned to a shipment, the interface cannot return any information when an equipment reference is given as input. If a container is assigned to an (active) shipment, the interface returns information on the active shipment.
+|
+
+| emptyIndicatorCode
+| X
+| emptyIndicatorCode
+|
+|
+
+|===
+
+
+[#EquipmentEventAllOf]
+=== _EquipmentEventAllOf_
+
+
+
+[.fields-EquipmentEventAllOf]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| eventType
+|
+| String
+|
+|  _Enum:_ EQUIPMENT,
+
+| eventTypeCode
+|
+| String
+| Unique identifier for Event Type Code. For equipment events this can be: - LOAD (Load) - DISC (Discharge) - GTIN (Gate in) - GTOT (Gate out) - STUF (Stuffing) - STRP (Stripping)
+|  _Enum:_ LOAD, DISC, GTIN, GTOT, STUF, STRP,
+
+| equipmentReference
+|
+| String
+| The unique identifier for the equipment, which should follow the BIC ISO Container Identification Number where possible. If a container is not yet assigned to a shipment, the interface cannot return any information when an equipment reference is given as input. If a container is assigned to an (active) shipment, the interface returns information on the active shipment.
+|
+
+| emptyIndicatorCode
+| X
+| emptyIndicatorCode
+|
+|
+
+|===
+
+
+[#Error]
+=== _Error_
+
+
+
+[.fields-Error]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| httpMethod
+| X
+| String
+| The HTTP request method type
+|
+
+| requestUri
+| X
+| String
+| The request URI.
+|
+
+| errors
+| X
+| List  of <<object>>
+|
+|
+
+| statusCode
+| X
+| Integer
+| The HTTP status code
+|
+
+| statusCodeText
+| X
+| String
+| The textual representation of the response status.
+|
+
+| errorDateTime
+| X
+| String
+| The date and time (in ISO 8601 format) the error occured.
+|
+
+|===
+
+
+[#Event]
+=== _Event_
+
+The event entity is described as a generalization of all the specific event categories. An event always takes place in relation to a shipment and can additionally be linked to a transport or an equipment
+
+[.fields-Event]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| eventID
+| X
+| String
+| The unique identifier for the Equipment Event ID/Transport Event ID/Shipment Event ID.
+|
+
+| eventType
+| X
+| eventType
+|
+|
+
+| eventDateTime
+| X
+| Date
+| The local date and time, where the event took place, in ISO 8601 format.
+| date-time
+
+| eventClassifierCode
+| X
+| eventClassifierCode
+|
+|
+
+| eventTypeCode
+| X
+| String
+| Unique identifier for Event Type Code. This code has different ENUM values depending on the type of event
+|
+
+| transportCallID
+|
+| BigDecimal
+| The unique identifier for a transport call
+|
+
+|===
+
+
+[#EventClassifierCode]
+=== _EventClassifierCode_
+
+Code for the event classifier, either PLN (Planned), ACT (Actual) or EST (Estimated).
+
+[.fields-EventClassifierCode]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+|===
+
+
+[#EventSubscription]
+=== _EventSubscription_
+
+
+
+[.fields-EventSubscription]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| subscriptionID
+|
+| UUID
+|
+| uuid
+
+| callbackUrl
+| X
+| URI
+| Your server, where the API server should send the event data
+| uri
+
+| eventType
+|
+| List  of <<eventType>>
+| A list of event types. Default is all events
+|
+
+| bookingReference
+|
+| String
+| The identifier for a shipment, which is issued by and unique within each of the carriers.
+|
+
+| transportDocumentID
+|
+| String
+| The Transport Document ID number is an identifier that links to a shipment, i.e. a Bill of Lading or a Sea Waybill. A bill of lading is the document of title to the goods issued to the customer which confirms the carrier&#39;s receipt of the cargo from the customer, acknowledging goods being shipped and specifying the terms of delivery. The Sea Waybill is a simpler document, the main difference being that it is non-negotiable.
+|
+
+| transportDocumentType
+|
+| transportDocumentType
+|
+|
+
+| equipmentReference
+|
+| String
+| The unique identifier for the equipment, which should follow the BIC ISO Container Identification Number where possible. If a container is not yet assigned to a shipment, the interface cannot return any information when an equipment reference is given as input. If a container is assigned to an (active) shipment, the interface returns information on the active shipment.
+|
+
+| scheduleID
+|
+| BigDecimal
+| ID uniquely identifying a schedule
+|
+
+| transportCallID
+|
+| BigDecimal
+| The unique identifier for a transport call
+|
+
+|===
+
+
+[#EventSubscriptionBody]
+=== _EventSubscriptionBody_
+
+The object used by the POST event-subscriptions endpoint
+
+[.fields-EventSubscriptionBody]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| callbackUrl
+| X
+| URI
+| Your server, where the API server should send the event data
+| uri
+
+| eventType
+|
+| List  of <<eventType>>
+| A list of event types. Default is all events
+|
+
+| bookingReference
+|
+| String
+| The identifier for a shipment, which is issued by and unique within each of the carriers.
+|
+
+| transportDocumentID
+|
+| String
+| The Transport Document ID number is an identifier that links to a shipment, i.e. a Bill of Lading or a Sea Waybill. A bill of lading is the document of title to the goods issued to the customer which confirms the carrier&#39;s receipt of the cargo from the customer, acknowledging goods being shipped and specifying the terms of delivery. The Sea Waybill is a simpler document, the main difference being that it is non-negotiable.
+|
+
+| transportDocumentType
+|
+| transportDocumentType
+|
+|
+
+| equipmentReference
+|
+| String
+| The unique identifier for the equipment, which should follow the BIC ISO Container Identification Number where possible. If a container is not yet assigned to a shipment, the interface cannot return any information when an equipment reference is given as input. If a container is assigned to an (active) shipment, the interface returns information on the active shipment.
+|
+
+| scheduleID
+|
+| BigDecimal
+| ID uniquely identifying a schedule
+|
+
+| transportCallID
+|
+| BigDecimal
+| The unique identifier for a transport call
+|
+
+|===
+
+
+[#EventType]
+=== _EventType_
+
+The Event Type of the object.
+
+[.fields-EventType]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+|===
+
+
+[#ShipmentEvent]
+=== _ShipmentEvent_
+
+The shipment event entity is a specialization of the event entity to support specification of data that only applies to a shipment event.
+
+[.fields-ShipmentEvent]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| eventID
+| X
+| String
+| The unique identifier for the Equipment Event ID/Transport Event ID/Shipment Event ID.
+|
+
+| eventType
+| X
+| String
+|
+|  _Enum:_ SHIPMENT,
+
+| eventDateTime
+| X
+| Date
+| The local date and time, where the event took place, in ISO 8601 format.
+| date-time
+
+| eventClassifierCode
+| X
+| eventClassifierCode
+|
+|
+
+| eventTypeCode
+| X
+| String
+| Unique identifier for Event Type Code. For shipment events this can be: - RECE (Received) - CONF (Confirmed) - ISSU (Issued) - APPR (Approved) - SUBM (Submitted) - SURR (Surrendered) - REJE (Rejected) - PENA (Pending approval)
+|  _Enum:_ RECE, CONF, ISSU, APPR, SUBM, SURR, REJE, PENA,
+
+| transportCallID
+|
+| BigDecimal
+| The unique identifier for a transport call
+|
+
+| shipmentInformationTypeCode
+| X
+| shipmentInformationTypeCode
+|
+|
+
+|===
+
+
+[#ShipmentEventAllOf]
+=== _ShipmentEventAllOf_
+
+
+
+[.fields-ShipmentEventAllOf]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| eventType
+|
+| String
+|
+|  _Enum:_ SHIPMENT,
+
+| eventTypeCode
+|
+| String
+| Unique identifier for Event Type Code. For shipment events this can be: - RECE (Received) - CONF (Confirmed) - ISSU (Issued) - APPR (Approved) - SUBM (Submitted) - SURR (Surrendered) - REJE (Rejected) - PENA (Pending approval)
+|  _Enum:_ RECE, CONF, ISSU, APPR, SUBM, SURR, REJE, PENA,
+
+| shipmentInformationTypeCode
+| X
+| shipmentInformationTypeCode
+|
+|
+
+|===
+
+
+[#ShipmentInformationTypeCode]
+=== _ShipmentInformationTypeCode_
+
+The code to identify the type of information that is related to the shipment. This code can have the values:
+- BOK (Booking)
+- SHI (Shipping Instruction)
+- VGM (Verified Gross Mass)
+- SRM (Shipment Release Message)
+- TRD (Transport Document)
+- ARN (Arrival Notice)
+
+
+[.fields-ShipmentInformationTypeCode]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+|===
+
+
+[#SubscriptionID]
+=== _SubscriptionID_
+
+The carrier issues a unique ID to the shipper or consignee for that subscription
+
+[.fields-SubscriptionID]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| subscriptionID
+|
+| UUID
+|
+| uuid
+
+|===
+
+
+[#TransportDocumentType]
+=== _TransportDocumentType_
+
+The Transport Document Type is used to identify which type of document, the value of &quot;transportDocumentID&quot; represents. The values available are:
+- BOL (Bill of Lading)
+- SWB (Sea Waybill)
+
+
+[.fields-TransportDocumentType]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+|===
+
+
+[#TransportEvent]
+=== _TransportEvent_
+
+The transport event entity is a specialization of the event entity to support specification of data that only applies to a transport event.
+
+[.fields-TransportEvent]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| eventID
+| X
+| String
+| The unique identifier for the Equipment Event ID/Transport Event ID/Shipment Event ID.
+|
+
+| eventType
+| X
+| String
+|
+|  _Enum:_ TRANSPORT,
+
+| eventDateTime
+| X
+| Date
+| The local date and time, where the event took place, in ISO 8601 format.
+| date-time
+
+| eventClassifierCode
+| X
+| eventClassifierCode
+|
+|
+
+| eventTypeCode
+| X
+| String
+| Unique identifier for Event Type Code, for transport events this is either ARRI (Arrival) or DEPA (Departure).
+|  _Enum:_ ARRI, DEPA,
+
+| transportCallID
+| X
+| BigDecimal
+| The unique identifier for a transport call
+|
+
+| delayReasonCode
+|
+| String
+| Reason code for the delay. The SMDG-Delay-Reason-Codes are used for this attribute. The code list can be found at http://www.smdg.org/smdg-code-lists/
+|
+
+| vesselScheduleChangeRemark
+|
+| String
+| Free text information provided by the vessel operator regarding the reasons for the change in schedule and/or plans to mitigate schedule slippage.
+|
+
+|===
+
+
+[#TransportEventAllOf]
+=== _TransportEventAllOf_
+
+
+
+[.fields-TransportEventAllOf]
+[cols="2,1,2,4,1"]
+|===
+| Field Name| Required| Type| Description| Format
+
+| eventType
+|
+| String
+|
+|  _Enum:_ TRANSPORT,
+
+| eventTypeCode
+|
+| String
+| Unique identifier for Event Type Code, for transport events this is either ARRI (Arrival) or DEPA (Departure).
+|  _Enum:_ ARRI, DEPA,
+
+| delayReasonCode
+|
+| String
+| Reason code for the delay. The SMDG-Delay-Reason-Codes are used for this attribute. The code list can be found at http://www.smdg.org/smdg-code-lists/
+|
+
+| vesselScheduleChangeRemark
+|
+| String
+| Free text information provided by the vessel operator regarding the reasons for the change in schedule and/or plans to mitigate schedule slippage.
+|
+
+|===
+
+
