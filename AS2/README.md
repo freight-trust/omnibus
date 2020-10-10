@@ -2,15 +2,18 @@
 
 > AS2^2
 
-AS2 (Applicability Statement 2) is a communication protocol developed by the Internet Engineering Task Force (IETF) for the exchange of business-to-business (B2B) transactions over the Internet securely.
-The AS2 application uses the HTTP transport protocol along with Multipurpose Internet Mail Extensions (MIME).
-The AS2 application governs the means of connection and exchange of data securely and reliably. 
-Besides the advanced security features, the AS2 application offers the following additional benefits:
+AS2 (Applicability Statement 2) is a communication protocol developed by the Internet Engineering Task Force (IETF)
 
-Privacy
-Authentication
-Nonrepudiation of origin and receipt of the message
-Data integrity
+**AS2 is for the exchange of business-to-business (B2B) transactions over the Internet securely.**
+
+The AS2 application uses the HTTP transport protocol along with Multipurpose Internet Mail Extensions (MIME). <br>
+The AS2 application governs the means of connection and exchange of data securely and reliably.  <br>
+Besides the advanced security features, the AS2 application offers the following additional benefits: <br>
+
+Privacy <br>
+Authentication <br>
+Nonrepudiation of origin and receipt of the message <br>
+Data integrity <br>
 
 
 The AS2 application provides a medium to exchange business data with partners by configuring an account in webMethods.io Integration.
@@ -66,22 +69,16 @@ The available options are:
 | Encryption Algorithm               | The encryption algorithm to use for an outbound AS2 message\.                                                                                                                                                                                                  |
 
 
-The available options are:
-RC2 40
-RC2 64
-RC2 128
-DES
-TripleDES
-AES 128
-AES 192
-AES 256
-
 Encryption Certificate	The certificate to use for encrypting an outbound AS2 message.
 Receive Encrypted Message	Select this option to receive an encrypted inbound AS2 message.
- If you select this option and the incoming AS2 message is not encrypted, then an Insufficient message security error is encountered and shared with the sender if MDN is requested by the sender.
+
+If you select this option and the incoming AS2 message is not encrypted, then an Insufficient message security error is encountered and shared with the sender if 
+MDN is requested by the sender.
+
 Decryption Keystore and Key Aliases	The keystore aliases the key aliases in the keystore to use for decrypting an inbound AS2 message.
+
 Request MDN	Whether you want the recipient to return an MDN to the sender.
-You can select one of the following options:
+
 
 None: The recipient of the AS2 message does not return an MDN to the sender.
 
@@ -118,11 +115,11 @@ If you want to explicitly specify a host name to be included as a part of the SN
 #### AS2 Predefined Operations
 The following predefined Applicability Statement 2 (AS2) operations are available:
 
-receive
-send
-standby
-broadcast
-sign 
+receive <br>
+send  <br>
+standby  <br>
+broadcast  <br>
+sign   <br>
 
 
 ### receive 
@@ -178,11 +175,7 @@ node	Object Optional. Receives an AS2 message of content type application/xml on
 | Content\-Type                      |  MIME content type of the inbound message\.                                |
 
 
-
-send
-Sends an AS2 message to a recipient’s defined endpoint.
-
-Input Parameters
+### Input Parameters
 
 | **Key**     | **Value**                                                               |
 |-------------|-------------------------------------------------------------------------|
@@ -192,80 +185,20 @@ Input Parameters
 
 
 #### The following options are available by default:
-application/edi-x12
-application/edifact
-application/xml
-application/json
-text/binary 
-
+application/edi-x12  <br>
+application/edifact  <br>
+application/xml  <br>
+application/json  <br>
+text/binary   <br>
+ 
 You can also type a custom value.
 
-otherHeaders	Document Optional. key and value strings of the header for an outbound message.
-attachments	Document Array Optional. Attachments for a message, if any.
-stream	Object java.io.InputStream object you want add to the attachment.
-contentType	String Content type of the attachment. For example, application/zip if the attachment is a .zip file.
-otherHeaders	Document Optional. key and value strings of the header you want to add to the attachment.
-customHeaders	Document Optional. Custom headers you want to include in an AS2 message.
-key	String Key for the custom header.
-value	String Value for the customer header.
+otherHeaders	Document Optional. key and value strings of the header for an outbound message.  <br>
+attachments	Document Array Optional. Attachments for a message, if any.  <br>
+stream	Object java.io.InputStream object you want add to the attachment.  <br> 
+contentType	String Content type of the attachment. For example, application/zip if the attachment is a .zip file.  <br>
+otherHeaders	Document Optional. key and value strings of the header you want to add to the attachment.  <br>
+customHeaders	Document Optional. Custom headers you want to include in an AS2 message.  <br>
+key	String Key for the custom header.  <br>
+value	String Value for the customer header.  <br>
 
-
-###  Output Parameters
-| **key**                            | **value**                                                                        |
-|------------------------------------|----------------------------------------------------------------------------------|
-| status                             | String Status of an outbound message\.                                           |
-| statusMessage                      | String Processing status of an outbound message\.                                |
-| request                            | Document AS2 message sent to a recipient\.                                       |
-| stream                             | Object AS2 message stream\.                                                      |
-| headers                            | Document Optional\. AS2 message headers\.                                        |
-| AS2\-To                            | String AS2 ID of the recipient\.                                                 |
-| AS2\-From                          | String AS2 ID of the sender\.                                                    |
-| Message\-ID                        | String Message ID of the outbound message\.                                      |
-| AS2\-Version                       | String AS2 protocol version used for the outbound message\.                      |
-| Content\-Type                      | String MIME content type of the outbound message\.                               |
-| EDIINT\-Features                   | String Optional features supported by the application\.                          |
-| Receipt\-Delivery\-Option          | String Optional\. Recipient's asynchronous MDN endpoint URL\.                    |
-| Disposition\-Notification\-To      | String Optional\. Acknowledgment request for the outbound message\.              |
-| Disposition\-Notification\-Options | String Optional\. Acknowledgment request to be signed for the outbound message\. |
-| response                           | Document Received MDN response\.                                                 |
-| status                             | String Status of the received MDN\.                                              |
-| statusMessage                      | String Status message of the received MDN\.                                      |
-| receipt                            | Document Optional\. Received MDN\.                                               |
-| stream                             | Object Object stream of the received MDN\.                                       |
-| headers                            | Document Optional\. Headers of the received MDN\.                                |
-| AS2\-To                            | String AS2 ID of the recipient\.                                                 |
-| AS2\-From                          | String AS2 ID of the sender\.                                                    |
-| Message\-ID                        | String Message ID of the inbound MDN\.                                           |
-| AS2\-Version                       | String AS2 protocol version used for the inbound MDN\.                           |
-| Content\-Type                      | String MIME content type of the inbound message\.                                |
-
-
-Configuring the Auto Detect Option
-
-
-
-You can select the Auto Detect option for the AS2 application to automatically identify an account based on the AS2-From and AS2-To headers of an inbound message.
-
-This option enables the AS2 application to compare an account configured with From and To fields with the AS2-From and AS2-To headers of an inbound message and vice versa. In addition, specifying this option allows the use of an individual endpoint URL with multiple partners.
-
-Note: Auto Detect option is supported only for the receive operation.
-
-Important: Configuring multiple accounts with identical values for the From and To fields might generate unpredictable results. This happens when the application uses the account that matches the first AS2-From and AS2-To headers of an inbound message. Therefore, if you have multiple accounts configured with identical values for the From and To fields, then do not select the Auto Detect option.
-
-Creating an Endpoint URL
-A sender requires a recipient’s endpoint URL to transfer AS2 messages.
- You must create an endpoint URL and share it with your partner to send AS2 messages to the endpoint URL.
-
-
-
-To create an endpoint URL
-
-Create a FlowService. Ensure that you specify a signature with contentStream and node as input parameters of type Object. Alternatively, you can define a Document Type as a signature with contentStream and node as input parameters of type Object.
-
-Configure the AS2 application with the receive operation to work with a new or existing account, or select the Auto Detect option for the application.
-
-Map the contentStream and node parameters of the Pipeline Input signature defined in step 1 with the AS2 application’s receiveInput parameter.
-
-Select the Enable FlowService to be invoked over HTTP option on the FlowService Overview page. An endpoint URL for this FlowService is generated.
-
-Share this endpoint URL with your partner to enable the partner to send AS2 messages.
