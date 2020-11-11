@@ -231,10 +231,7 @@ in a timely manner.
 
 Tel: 628 222 5915 Fax: 818 457 5660
 
-ZENDESK TOLL FREE NUMBER 888 421 1904
-
 Alternative Systems of Contact
-<https://gitlab.com/fr8/ops/-/issues/1#note_359879063>
-<incoming+fr8-ops-19331724-issue-@incoming.gitlab.com>
+[https://github.com/freight-trust/security](https://github.com/freight-trust/security)
 
 [NYDFS](https://www.dfs.ny.gov/docs/legal/regulations/adoptions/dfsrf500txt.pdf)
