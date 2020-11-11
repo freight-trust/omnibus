@@ -1,10 +1,8 @@
-# 
+## Document Retention Policy
 
-Freight Trust
+Freight Trust Records Management Officer
 
-Records Management Officer
-
-# Overivew
+## Overivew
 
 The corporate information of Freight Trust \[and its subsidiaries\] is
 important to how it conducts business and manages employees.
@@ -47,14 +45,14 @@ Therefore, this policy is part of a company-wide system for the review,
 retention, and destruction of records Freight Trust creates or receives
 in connection with the business it conducts.
 
-# REASONS FOR POLICY
+#### Reasons for Policy
 
 Counsel may consider revising the clause above to include mention of any
 state or local law for the jurisdiction(s) where this policy will be
 used. Also consider adding examples of records that are specific to the
 company’s industry and workplace.
 
-## Types of Documents
+#### Types of Documents
 
 This policy explains the differences among records, disposable
 information, and confidential information belonging to others.
@@ -105,7 +103,7 @@ reason (or a litigation hold or other special situation) calls for its
 continued retention. If you are unsure whether to retain a certain
 record, contact the Records Management Officer or the Legal Department.
 
-### Disposable Information
+###### Disposable Information
 
 Disposable information consists of data that may be discarded or deleted
 at the discretion of the user once it has served its temporary useful
@@ -124,7 +122,7 @@ record as defined by this policy. Examples may include: image
 
   - Spam and junk mail.
 
-### Confidential Information Belonging to Others
+###### Confidential Information Belonging to Others
 
 Any confidential information that an employee may have obtained from a
 source outside of Freight Trust, such as a previous employer, must not,
@@ -133,7 +131,7 @@ used by Freight Trust. Unsolicited confidential information submitted to
 Freight Trust should be refused, returned to the sender where possible,
 and deleted, if received via the internet. Mandatory Compliance
 
-### Responsibility of All Employees
+###### Responsibility of All Employees
 
 Freight Trust strives to comply with the laws, rules, and regulations
 that govern it and with recognized compliance practices. All company
@@ -160,14 +158,9 @@ or retaliation for reporting incidents of inappropriate conduct of any
 kind, pursuing any record destruction claim, or cooperating in related
 investigations.
 
-# MANDATORY COMPLIANCE
+## Mandatory Compliance
 
-It is important to remind all employees that retaliation of any kind,
-including for reporting any type of violation of a policy, is strictly
-prohibited. For more information on retaliation generally and how to
-prevent it, see Practice Note, Retaliation.
-
-## Records Management Department and Records Management Officer
+#### Records Management Department and Records Management Officer
 
 The Records Management Department is responsible for identifying the
 documents that Freight Trust must or should retain, and determining, in
@@ -257,14 +250,14 @@ with state \[and foreign\] regulations.
         noncompliance by department heads or other employees with this
         policy and Freight Trust’s document management program.
 
-# RECORDS MANAGEMENT DEPARTMENT AND RECORDS MANAGEMENT OFFICER
+## RECORDS MANAGEMENT DEPARTMENT AND RECORDS MANAGEMENT OFFICER
 
 For more information on the roles within the company that are
 responsible for implementing and managing the policy, see Practice Note,
 Drafting a Document Retention Policy: Define Employees' DRP Roles and
 Responsibilities.
 
-# How to Store and Destroy Records
+## How to Store and Destroy Records
 
 Storage Freight Trust’s records must be stored in a safe, secure, and
 accessible manner. Any documents and financial files that are essential
@@ -272,7 +265,7 @@ to Freight Trust’s business operations during an emergency must be
 duplicated and/or backed up at least once per week and maintained off
 site.
 
-# STORAGE
+## Storage 
 
 This clause reminds employees to back up files necessary for the
 company’s business continuation procedures. Counsel should consider
@@ -295,7 +288,7 @@ is to begin because Freight Trust may be involved in a lawsuit or an
 official investigation (see next paragraph). Destruction may begin again
 once the Legal Department lifts the relevant litigation hold.
 
-## Destruction
+#### Destruction
 
 The dcument management program and training procedures include
 instructions on how the Records Management Officer and other employees
@@ -307,7 +300,7 @@ copies of the electronic records are discarded, including copies
 residing on backup tapes, temporary files, additional servers, and all
 employees' email in-boxes and other electronic storage locations.
 
-# Litigation Holds and Other Special Situations
+## Litigation Holds and Other Special Situations
 
 Freight Trust requires all employees to comply fully with its published
 records retention schedule and procedures as provided in this policy.
