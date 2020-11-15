@@ -1,13 +1,3 @@
-# 
-
-**DISA Address**
-
-> 
-> 
->     Data Interchange Standards Association, Inc.
->     1800 Diagonal Road, Suite 200
->     Alexandria, VA 22314-2852
->     (703) 548-7005
 
 # ASC X12 Standards
 
@@ -348,24 +338,6 @@ address the interchange envelope between partners. Therefore a
 transmission is analogous to a mail delivery to or a mail pickup from a
 mailbox.
 
-## Transmission Diagram
-
-The sequence of control segments making up a transmission is displayed
-in the following figure:
-
-┌──────────────────────────────────────────────────────────────────────────┐
-│ ISA ─────────────────┐ ISA/IEA Each interchange is bounded by an │ │
-TA1 ─────────── │ ISA/IEA segment pair. │ │ …​ ─────────── │ │ │ GS
-──────────┐ │ TA1 Transmission Acknowledgment segments, │ │ ST
-───┐ │ │ if used, immediately follow the ISA. │ │ …​│ │ │ │ │ SE ───┘ │
-│ GS/GE Each Functional Group of similar │ │ …​ ──── │ │ transaction
-sets is bounded by a │ │ GE ──────────┘ │ GS/GE segment pair. │ │ …​
-─────────── │ │ │ IEA ─────────────────┘ ST/SE Each transaction
-set document starts │ │ ISA ─────────────────┐ with an ST and ends with
-an SE. │ │ …​ ─────────── │ │ │ IEA ─────────────────┘ Each structure
-may repeat an arbitrary │ │ …​ ────────────────── number of times in its
-position. │
-└──────────────────────────────────────────────────────────────────────────┘
 
 ## ASC X12 License
 
