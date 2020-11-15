@@ -1,4 +1,4 @@
-# 
+# EcoSystem
 
 [originally published on our medium
 blog](https://medium.com/freighttrust/evolving-the-freight-trust-ecosystem-fe77d7f28b8c)
@@ -75,7 +75,7 @@ capture an incredible amount of value by doing so.
     > mobilize investment by a broad range of other participants rather
     > than requiring the shaper to put all its own money on the table.”
     > 
-    > —  Deloitte John Hagel 
+    > —  John Hagel, Deloitte 
 
 As Hagel explains very well in this passage and in the related post, the
 nature of continuous transformation in technology and markets brings up
